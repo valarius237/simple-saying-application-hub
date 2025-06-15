@@ -1,6 +1,6 @@
 
 import { Link, useLocation } from "react-router-dom";
-import { Mail } from "lucide-react";
+import { Building2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
@@ -18,7 +18,7 @@ const Navbar = () => {
     <nav className="bg-background border-b border-border px-4 py-3 sticky top-0 z-50">
       <div className="flex flex-col md:flex-row md:items-center justify-between max-w-6xl mx-auto gap-2">
         <div className="flex items-center gap-2 text-2xl font-bold text-primary">
-          <Mail className="text-primary" size={28} />
+          <Building2 className="text-primary" size={28} />
           Musée Inspiré
         </div>
         <ul className="flex flex-wrap items-center gap-2 md:gap-6">

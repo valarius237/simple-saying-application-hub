@@ -1,6 +1,5 @@
-
 import { Link } from "react-router-dom";
-import { Mail, Instagram, Twitter, Youtube, Facebook } from "lucide-react";
+import { Building2, Instagram, Twitter, Youtube, Facebook } from "lucide-react";
 
 const navigation = [
   { name: "Accueil", path: "/" },
@@ -25,7 +24,7 @@ const Footer = () => {
         {/* Logo & contact */}
         <div>
           <div className="flex items-center gap-2 mb-3">
-            <Mail className="text-primary" size={22} />
+            <Building2 className="text-primary" size={22} />
             <span className="font-bold text-lg text-primary">Musée Inspiré</span>
           </div>
           <div className="text-muted-foreground text-sm space-y-1 mb-3">
