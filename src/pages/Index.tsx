@@ -1,7 +1,7 @@
-
 // Page d'accueil inspirée du British Museum
 
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const Index = () => (
   <>
@@ -88,8 +88,8 @@ const Index = () => (
         </div>
       </section>
     </main>
+    <Footer />
   </>
 );
 
 export default Index;
-
