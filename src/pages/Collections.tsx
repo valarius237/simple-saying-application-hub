@@ -1,3 +1,4 @@
+
 import Navbar from "@/components/Navbar";
 
 const artworks = [
@@ -18,6 +19,14 @@ const artworks = [
     description: "Symbole de la révolution française et de la lutte pour la liberté.",
     img: "https://upload.wikimedia.org/wikipedia/commons/a/a7/Eug%C3%A8ne_Delacroix_-_La_libert%C3%A9_guidant_le_peuple.jpg"
   },
+  {
+    title: "Les Désastres de la guerre",
+    artist: "Francisco Goya",
+    year: "1810-1820",
+    category: "Œuvres de guerre",
+    description: "Série de gravures dénonçant les atrocités de la guerre napoléonienne en Espagne.",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Prado_-_Los_Desastres_de_la_Guerra_-_No._15_-_Y_no_hay_remedio.jpg/800px-Prado_-_Los_Desastres_de_la_Guerra_-_No._15_-_Y_no_hay_remedio.jpg"
+  },
   // Œuvres religieuses
   {
     title: "La Chapelle Sixtine",
@@ -34,6 +43,14 @@ const artworks = [
     category: "Œuvres religieuses",
     description: "Représentation du dernier repas du Christ avec ses disciples.",
     img: "https://upload.wikimedia.org/wikipedia/commons/4/4b/%C3%9Altima_Cena_-_Da_Vinci_5.jpg"
+  },
+  {
+    title: "La Création d'Adam",
+    artist: "Michel-Ange",
+    year: "1512",
+    category: "Œuvres religieuses",
+    description: "Fresque emblématique de la Chapelle Sixtine représentant la création de l'homme.",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Creaci%C3%B3n_de_Ad%C3%A1m.jpg/1200px-Creaci%C3%B3n_de_Ad%C3%A1m.jpg"
   },
   // Œuvres européennes
   {
@@ -52,6 +69,14 @@ const artworks = [
     description: "Paysage nocturne post-impressionniste aux mouvements tourbillonnants.",
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1280px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
   },
+  {
+    title: "Les Tournesols",
+    artist: "Vincent van Gogh",
+    year: "1888",
+    category: "Œuvres européennes",
+    description: "Série de natures mortes représentant des tournesols dans un vase.",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Vincent_Willem_van_Gogh_127.jpg/800px-Vincent_Willem_van_Gogh_127.jpg"
+  },
   // Œuvres africaines et asiatiques
   {
     title: "Masques Dogon",
@@ -68,6 +93,14 @@ const artworks = [
     category: "Œuvres asiatiques",
     description: "Estampe japonaise emblématique du style ukiyo-e.",
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/The_Great_Wave_off_Kanagawa.jpg/1280px-The_Great_Wave_off_Kanagawa.jpg"
+  },
+  {
+    title: "Statue de Bouddha de Gandhara",
+    artist: "Art gréco-bouddhique",
+    year: "IIe-IIIe siècle",
+    category: "Œuvres asiatiques",
+    description: "Sculpture représentant Bouddha, exemple de l'art gréco-bouddhique.",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Standing_Buddha_Gandhara_Kushan.jpg/600px-Standing_Buddha_Gandhara_Kushan.jpg"
   }
 ];
 

@@ -1,3 +1,4 @@
+
 import Navbar from "@/components/Navbar";
 
 const expositions = [
@@ -23,16 +24,18 @@ const expositions = [
     artwork: "Masques Dogon traditionnels (XIVe siècle)"
   },
   {
-    title: "Étoiles et Civilisations",
+    title: "Van Gogh : Nuits et Lumières",
     date: "05 Juin - 12 Septembre 2025",
-    desc: "Une exposition immersive sur l'astronomie des anciennes civilisations.",
-    img: "photo-1492321936769-b49830bc1d1e"
+    desc: "Une exposition dédiée aux œuvres nocturnes de Van Gogh, explorant sa fascination pour les effets de lumière et les paysages étoilés.",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1280px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
+    artwork: "La Nuit étoilée de Vincent van Gogh (1889)"
   },
   {
-    title: "Couleurs sacrées",
+    title: "Art Bouddhique : Sérénité et Spiritualité",
     date: "En cours",
-    desc: "Voyage au cœur des symboles et couleurs de l'art religieux.",
-    img: "photo-1466442929976-97f336a657be"
+    desc: "Voyage au cœur de l'art bouddhique avec des sculptures et représentations emblématiques de différentes époques et régions.",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Standing_Buddha_Gandhara_Kushan.jpg/600px-Standing_Buddha_Gandhara_Kushan.jpg",
+    artwork: "Statue de Bouddha de Gandhara (IIe-IIIe siècle)"
   }
 ];
 
