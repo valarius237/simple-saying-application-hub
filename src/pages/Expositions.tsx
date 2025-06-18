@@ -1,4 +1,3 @@
-
 import Navbar from "@/components/Navbar";
 
 const expositions = [
@@ -13,14 +12,14 @@ const expositions = [
     title: "Art Sacré : La Chapelle Sixtine dévoilée",
     date: "En cours jusqu'au 25 Août 2025",
     desc: "Découvrez les secrets de la fresque de Michel-Ange à travers des reproductions haute définition et des analyses détaillées de cette œuvre monumentale.",
-    img: "https://upload.wikimedia.org/wikipedia/commons/5/5c/Sistine_Chapel_ceiling_right.png",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Sistine_Chapel_ceiling_panorama.jpg/1024px-Sistine_Chapel_ceiling_panorama.jpg",
     artwork: "La Chapelle Sixtine de Michel-Ange (1508-1512)"
   },
   {
     title: "Trésors d'Afrique : Masques et Rituels",
     date: "10 Septembre - 15 Décembre 2025",
     desc: "Une immersion dans l'art traditionnel africain avec une collection exceptionnelle de masques Dogon et leur signification spirituelle.",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Dogon_mask_Louvre_70-1998-2-1.jpg/800px-Dogon_mask_Louvre_70-1998-2-1.jpg",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Dogon_mask_1.jpg/640px-Dogon_mask_1.jpg",
     artwork: "Masques Dogon traditionnels (XIVe siècle)"
   },
   {
@@ -34,7 +33,7 @@ const expositions = [
     title: "Art Bouddhique : Sérénité et Spiritualité",
     date: "En cours",
     desc: "Voyage au cœur de l'art bouddhique avec des sculptures et représentations emblématiques de différentes époques et régions.",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Standing_Buddha_Gandhara_Kushan.jpg/600px-Standing_Buddha_Gandhara_Kushan.jpg",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Gandhara_Buddha_%28tnm%29.jpeg/640px-Gandhara_Buddha_%28tnm%29.jpeg",
     artwork: "Statue de Bouddha de Gandhara (IIe-IIIe siècle)"
   }
 ];

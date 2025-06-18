@@ -1,4 +1,3 @@
-
 import Navbar from "@/components/Navbar";
 
 const artworks = [
@@ -25,7 +24,7 @@ const artworks = [
     year: "1810-1820",
     category: "Œuvres de guerre",
     description: "Série de gravures dénonçant les atrocités de la guerre napoléonienne en Espagne.",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Prado_-_Los_Desastres_de_la_Guerra_-_No._15_-_Y_no_hay_remedio.jpg/800px-Prado_-_Los_Desastres_de_la_Guerra_-_No._15_-_Y_no_hay_remedio.jpg"
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Francisco_de_Goya%2C_Disasters_of_War%2C_plate_3_%28Lo_mismo%29.jpg/640px-Francisco_de_Goya%2C_Disasters_of_War%2C_plate_3_%28Lo_mismo%29.jpg"
   },
   // Œuvres religieuses
   {
@@ -34,7 +33,7 @@ const artworks = [
     year: "1508-1512",
     category: "Œuvres religieuses",
     description: "Fresque monumentale représentant des scènes de la Genèse.",
-    img: "https://upload.wikimedia.org/wikipedia/commons/5/5c/Sistine_Chapel_ceiling_right.png"
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Sistine_Chapel_ceiling_panorama.jpg/1024px-Sistine_Chapel_ceiling_panorama.jpg"
   },
   {
     title: "La Cène",
@@ -50,7 +49,7 @@ const artworks = [
     year: "1512",
     category: "Œuvres religieuses",
     description: "Fresque emblématique de la Chapelle Sixtine représentant la création de l'homme.",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Creaci%C3%B3n_de_Ad%C3%A1m.jpg/1200px-Creaci%C3%B3n_de_Ad%C3%A1m.jpg"
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Creaci%C3%B3n_de_Ad%C3%A1n_%28Miguel_%C3%81ngel%29.jpg/1024px-Creaci%C3%B3n_de_Ad%C3%A1n_%28Miguel_%C3%81ngel%29.jpg"
   },
   // Œuvres européennes
   {
@@ -84,7 +83,7 @@ const artworks = [
     year: "XIVe siècle",
     category: "Œuvres africaines",
     description: "Masques rituels utilisés dans les cérémonies ancestrales du Mali.",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Dogon_mask_Louvre_70-1998-2-1.jpg/800px-Dogon_mask_Louvre_70-1998-2-1.jpg"
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Dogon_mask_1.jpg/640px-Dogon_mask_1.jpg"
   },
   {
     title: "Grande Vague de Kanagawa",
@@ -100,7 +99,7 @@ const artworks = [
     year: "IIe-IIIe siècle",
     category: "Œuvres asiatiques",
     description: "Sculpture représentant Bouddha, exemple de l'art gréco-bouddhique.",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Standing_Buddha_Gandhara_Kushan.jpg/600px-Standing_Buddha_Gandhara_Kushan.jpg"
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Gandhara_Buddha_%28tnm%29.jpeg/640px-Gandhara_Buddha_%28tnm%29.jpeg"
   }
 ];
 
