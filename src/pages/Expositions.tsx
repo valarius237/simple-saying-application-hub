@@ -1,4 +1,3 @@
-
 import Navbar from "@/components/Navbar";
 
 const expositions = [
@@ -6,21 +5,21 @@ const expositions = [
     title: "Guernica : Témoignage d'une époque",
     date: "15 Mars - 30 Juin 2025",
     desc: "Une exposition dédiée au chef-d'œuvre de Picasso, explorant le contexte historique de la guerre civile espagnole et l'impact de cette œuvre sur l'art moderne.",
-    img: "photo-1494891848038-7bd202a2afeb",
+    img: "https://upload.wikimedia.org/wikipedia/en/7/74/PicassoGuernica.jpg",
     artwork: "Guernica de Pablo Picasso (1937)"
   },
   {
     title: "Art Sacré : La Chapelle Sixtine dévoilée",
     date: "En cours jusqu'au 25 Août 2025",
     desc: "Découvrez les secrets de la fresque de Michel-Ange à travers des reproductions haute définition et des analyses détaillées de cette œuvre monumentale.",
-    img: "photo-1466442929976-97f336a657be",
+    img: "https://upload.wikimedia.org/wikipedia/commons/5/5c/Sistine_Chapel_ceiling_right.png",
     artwork: "La Chapelle Sixtine de Michel-Ange (1508-1512)"
   },
   {
     title: "Trésors d'Afrique : Masques et Rituels",
     date: "10 Septembre - 15 Décembre 2025",
     desc: "Une immersion dans l'art traditionnel africain avec une collection exceptionnelle de masques Dogon et leur signification spirituelle.",
-    img: "photo-1469041797191-50ace28483c3",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Dogon_mask_Louvre_70-1998-2-1.jpg/800px-Dogon_mask_Louvre_70-1998-2-1.jpg",
     artwork: "Masques Dogon traditionnels (XIVe siècle)"
   },
   {
@@ -51,7 +50,7 @@ const Expositions = () => (
         {expositions.map((expo, idx) => (
           <div key={expo.title} className="flex flex-col md:flex-row bg-card shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow">
             <img
-              src={`https://images.unsplash.com/${expo.img}?w=500`}
+              src={expo.img.startsWith('http') ? expo.img : `https://images.unsplash.com/${expo.img}?w=500`}
               alt={expo.title}
               className="w-full md:w-72 h-64 md:h-56 object-cover"
             />

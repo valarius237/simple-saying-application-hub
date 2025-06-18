@@ -1,4 +1,3 @@
-
 import Navbar from "@/components/Navbar";
 
 const artworks = [
@@ -9,7 +8,7 @@ const artworks = [
     year: "1937",
     category: "Œuvres de guerre",
     description: "Chef-d'œuvre du cubisme dénonçant les horreurs de la guerre civile espagnole.",
-    img: "photo-1494891848038-7bd202a2afeb"
+    img: "https://upload.wikimedia.org/wikipedia/en/7/74/PicassoGuernica.jpg"
   },
   {
     title: "La Liberté guidant le peuple",
@@ -17,7 +16,7 @@ const artworks = [
     year: "1830",
     category: "Œuvres de guerre",
     description: "Symbole de la révolution française et de la lutte pour la liberté.",
-    img: "photo-1461749280684-dccba630e2f6"
+    img: "https://upload.wikimedia.org/wikipedia/commons/a/a7/Eug%C3%A8ne_Delacroix_-_La_libert%C3%A9_guidant_le_peuple.jpg"
   },
   // Œuvres religieuses
   {
@@ -26,7 +25,7 @@ const artworks = [
     year: "1508-1512",
     category: "Œuvres religieuses",
     description: "Fresque monumentale représentant des scènes de la Genèse.",
-    img: "photo-1466442929976-97f336a657be"
+    img: "https://upload.wikimedia.org/wikipedia/commons/5/5c/Sistine_Chapel_ceiling_right.png"
   },
   {
     title: "La Cène",
@@ -34,7 +33,7 @@ const artworks = [
     year: "1495-1498",
     category: "Œuvres religieuses",
     description: "Représentation du dernier repas du Christ avec ses disciples.",
-    img: "photo-1473177104440-ffee2f376098"
+    img: "https://upload.wikimedia.org/wikipedia/commons/4/4b/%C3%9Altima_Cena_-_Da_Vinci_5.jpg"
   },
   // Œuvres européennes
   {
@@ -43,7 +42,7 @@ const artworks = [
     year: "1503-1519",
     category: "Œuvres européennes",
     description: "Portrait énigmatique, symbole de la Renaissance italienne.",
-    img: "photo-1452378174528-3090a4bba7b2"
+    img: "https://upload.wikimedia.org/wikipedia/commons/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg"
   },
   {
     title: "La Nuit étoilée",
@@ -51,7 +50,7 @@ const artworks = [
     year: "1889",
     category: "Œuvres européennes",
     description: "Paysage nocturne post-impressionniste aux mouvements tourbillonnants.",
-    img: "photo-1494891848038-7bd202a2afeb"
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1280px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
   },
   // Œuvres africaines et asiatiques
   {
@@ -60,7 +59,7 @@ const artworks = [
     year: "XIVe siècle",
     category: "Œuvres africaines",
     description: "Masques rituels utilisés dans les cérémonies ancestrales du Mali.",
-    img: "photo-1469041797191-50ace28483c3"
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Dogon_mask_Louvre_70-1998-2-1.jpg/800px-Dogon_mask_Louvre_70-1998-2-1.jpg"
   },
   {
     title: "Grande Vague de Kanagawa",
@@ -68,7 +67,7 @@ const artworks = [
     year: "1831",
     category: "Œuvres asiatiques",
     description: "Estampe japonaise emblématique du style ukiyo-e.",
-    img: "photo-1466442929976-97f336a657be"
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/The_Great_Wave_off_Kanagawa.jpg/1280px-The_Great_Wave_off_Kanagawa.jpg"
   }
 ];
 
@@ -95,7 +94,7 @@ const Collections = () => (
               .map((artwork, idx) => (
                 <div key={artwork.title} className="rounded-lg shadow bg-card overflow-hidden hover:scale-105 transition-transform">
                   <img 
-                    src={`https://images.unsplash.com/${artwork.img}?w=600`} 
+                    src={artwork.img}
                     alt={artwork.title} 
                     className="w-full h-48 object-cover" 
                   />
