@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import { useState } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const Navbar = () => {
   const location = useLocation();
@@ -59,30 +60,34 @@ const Navbar = () => {
             ))}
           </ul>
 
-          {/* Language Selector Desktop */}
-          <div className="flex items-center gap-2 border-l pl-4">
-            <Globe size={18} className="text-muted-foreground" />
-            <Button
-              variant={language === 'en' ? 'default' : 'ghost'}
-              size="sm"
-              onClick={() => handleLanguageChange('en')}
-              className="transition-all duration-300 hover:scale-105"
-            >
-              EN
-            </Button>
-            <Button
-              variant={language === 'fr' ? 'default' : 'ghost'}
-              size="sm"
-              onClick={() => handleLanguageChange('fr')}
-              className="transition-all duration-300 hover:scale-105"
-            >
-              FR
-            </Button>
+          {/* Theme Toggle & Language Selector Desktop */}
+          <div className="flex items-center gap-3 border-l pl-4">
+            <ThemeToggle />
+            <div className="flex items-center gap-2">
+              <Globe size={18} className="text-muted-foreground" />
+              <Button
+                variant={language === 'en' ? 'default' : 'ghost'}
+                size="sm"
+                onClick={() => handleLanguageChange('en')}
+                className="transition-all duration-300 hover:scale-105"
+              >
+                EN
+              </Button>
+              <Button
+                variant={language === 'fr' ? 'default' : 'ghost'}
+                size="sm"
+                onClick={() => handleLanguageChange('fr')}
+                className="transition-all duration-300 hover:scale-105"
+              >
+                FR
+              </Button>
+            </div>
           </div>
         </div>
 
         {/* Mobile menu button */}
         <div className="md:hidden flex items-center gap-3">
+          <ThemeToggle />
           {/* Language Selector Mobile */}
           <div className="flex items-center gap-1">
             <Button
