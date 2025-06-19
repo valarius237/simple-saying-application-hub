@@ -1,14 +1,17 @@
 
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import { useRef, useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { toast } from "@/components/ui/use-toast";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Contact = () => {
   const formRef = useRef<HTMLFormElement>(null);
   const [sending, setSending] = useState(false);
+  const { t } = useLanguage();
 
   const sendEmail = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -39,13 +42,13 @@ const Contact = () => {
         }),
       });
       if (res.ok) {
-        toast({ title: "Message envoyé !", description: "Merci pour votre message. Nous vous répondrons rapidement." });
+        toast({ title: t.messageSent, description: t.thankYou });
         formRef.current?.reset();
       } else {
-        toast({ title: "Erreur", description: "L'envoi a échoué. Réessayez plus tard.", variant: "destructive" });
+        toast({ title: "Erreur", description: t.messageError, variant: "destructive" });
       }
     } catch (err) {
-      toast({ title: "Erreur", description: "Problème de connexion. Réessayez.", variant: "destructive" });
+      toast({ title: "Erreur", description: t.connectionError, variant: "destructive" });
     }
     setSending(false);
   };
@@ -53,21 +56,22 @@ const Contact = () => {
   return (
     <>
       <Navbar />
-      <main className="flex justify-center p-6">
+      <main className="flex justify-center p-6 animate-fade-in">
         <form
           ref={formRef}
           onSubmit={sendEmail}
-          className="bg-card rounded shadow-md p-6 w-full max-w-md flex flex-col gap-4"
+          className="bg-card rounded shadow-md p-6 w-full max-w-md flex flex-col gap-4 hover-scale transition-all duration-300"
         >
-          <h1 className="font-bold text-2xl mb-2">Contactez-nous</h1>
-          <Input name="name" placeholder="Votre nom" required minLength={2} maxLength={40} />
-          <Input name="email" placeholder="Votre email" type="email" required />
-          <Textarea name="message" placeholder="Votre message..." required minLength={10} maxLength={600} rows={5} />
+          <h1 className="font-bold text-2xl mb-2">{t.contactUs}</h1>
+          <Input name="name" placeholder={t.yourName} required minLength={2} maxLength={40} />
+          <Input name="email" placeholder={t.yourEmail} type="email" required />
+          <Textarea name="message" placeholder={t.yourMessage} required minLength={10} maxLength={600} rows={5} />
           <Button type="submit" disabled={sending}>
-            {sending ? "Envoi en cours..." : "Envoyer"}
+            {sending ? t.sending : t.send}
           </Button>
         </form>
       </main>
+      <Footer />
     </>
   );
 };

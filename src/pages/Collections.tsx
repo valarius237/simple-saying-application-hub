@@ -1,5 +1,7 @@
 
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const artworks = [
   // Œuvres de guerre
@@ -7,146 +9,189 @@ const artworks = [
     title: "Guernica",
     artist: "Pablo Picasso",
     year: "1937",
-    category: "Œuvres de guerre",
-    description: "Chef-d'œuvre du cubisme dénonçant les horreurs de la guerre civile espagnole.",
+    category: "war",
+    description: {
+      en: "Cubist masterpiece denouncing the horrors of the Spanish Civil War.",
+      fr: "Chef-d'œuvre du cubisme dénonçant les horreurs de la guerre civile espagnole."
+    },
     img: "https://upload.wikimedia.org/wikipedia/en/7/74/PicassoGuernica.jpg"
   },
   {
     title: "La Liberté guidant le peuple",
     artist: "Eugène Delacroix",
     year: "1830",
-    category: "Œuvres de guerre",
-    description: "Symbole de la révolution française et de la lutte pour la liberté.",
+    category: "war",
+    description: {
+      en: "Symbol of the French Revolution and the struggle for freedom.",
+      fr: "Symbole de la révolution française et de la lutte pour la liberté."
+    },
     img: "https://upload.wikimedia.org/wikipedia/commons/a/a7/Eug%C3%A8ne_Delacroix_-_La_libert%C3%A9_guidant_le_peuple.jpg"
   },
   {
     title: "Les Désastres de la guerre",
     artist: "Francisco Goya",
     year: "1810-1820",
-    category: "Œuvres de guerre",
-    description: "Série de gravures dénonçant les atrocités de la guerre napoléonienne en Espagne.",
+    category: "war",
+    description: {
+      en: "Series of engravings denouncing the atrocities of the Napoleonic War in Spain.",
+      fr: "Série de gravures dénonçant les atrocités de la guerre napoléonienne en Espagne."
+    },
     img: "https://www.museodelprado.es/typo3temp/pics/690988c1bb.jpg"
   },
-  // Œuvres religieuses
   {
     title: "La Chapelle Sixtine",
     artist: "Michel-Ange",
     year: "1508-1512",
-    category: "Œuvres religieuses",
-    description: "Fresque monumentale représentant des scènes de la Genèse.",
+    category: "religious",
+    description: {
+      en: "Monumental fresco depicting scenes from Genesis.",
+      fr: "Fresque monumentale représentant des scènes de la Genèse."
+    },
     img: "https://www.musei-vaticani.va/content/dam/musei-vaticani/immagini/collezioni/musei/cappella-sistina/00-Cappella-Sistina.jpg"
   },
   {
     title: "La Cène",
     artist: "Léonard de Vinci",
     year: "1495-1498",
-    category: "Œuvres religieuses",
-    description: "Représentation du dernier repas du Christ avec ses disciples.",
+    category: "religious",
+    description: {
+      en: "Depiction of Christ's last meal with his disciples.",
+      fr: "Représentation du dernier repas du Christ avec ses disciples."
+    },
     img: "https://upload.wikimedia.org/wikipedia/commons/4/4b/%C3%9Altima_Cena_-_Da_Vinci_5.jpg"
   },
   {
     title: "La Création d'Adam",
     artist: "Michel-Ange",
     year: "1512",
-    category: "Œuvres religieuses",
-    description: "Fresque emblématique de la Chapelle Sixtine représentant la création de l'homme.",
+    category: "religious",
+    description: {
+      en: "Iconic fresco from the Sistine Chapel depicting the creation of man.",
+      fr: "Fresque emblématique de la Chapelle Sixtine représentant la création de l'homme."
+    },
     img: "https://www.musei-vaticani.va/content/dam/musei-vaticani/immagini/collezioni/musei/cappella-sistina/01-Cappella-Sistina-Creazione-di-Adamo.jpg"
   },
-  // Œuvres européennes
   {
     title: "La Joconde",
     artist: "Léonard de Vinci",
     year: "1503-1519",
-    category: "Œuvres européennes",
-    description: "Portrait énigmatique, symbole de la Renaissance italienne.",
+    category: "european",
+    description: {
+      en: "Enigmatic portrait, symbol of the Italian Renaissance.",
+      fr: "Portrait énigmatique, symbole de la Renaissance italienne."
+    },
     img: "https://upload.wikimedia.org/wikipedia/commons/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg"
   },
   {
     title: "La Nuit étoilée",
     artist: "Vincent van Gogh",
     year: "1889",
-    category: "Œuvres européennes",
-    description: "Paysage nocturne post-impressionniste aux mouvements tourbillonnants.",
+    category: "european",
+    description: {
+      en: "Post-impressionist nocturnal landscape with swirling movements.",
+      fr: "Paysage nocturne post-impressionniste aux mouvements tourbillonnants."
+    },
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1280px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
   },
   {
     title: "Les Tournesols",
     artist: "Vincent van Gogh",
     year: "1888",
-    category: "Œuvres européennes",
-    description: "Série de natures mortes représentant des tournesols dans un vase.",
+    category: "european",
+    description: {
+      en: "Series of still lifes depicting sunflowers in a vase.",
+      fr: "Série de natures mortes représentant des tournesols dans un vase."
+    },
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Vincent_Willem_van_Gogh_127.jpg/800px-Vincent_Willem_van_Gogh_127.jpg"
   },
-  // Œuvres africaines et asiatiques
   {
     title: "Masques Dogon",
     artist: "Art traditionnel Dogon",
     year: "XIVe siècle",
-    category: "Œuvres africaines",
-    description: "Masques rituels utilisés dans les cérémonies ancestrales du Mali.",
+    category: "african",
+    description: {
+      en: "Ritual masks used in ancestral ceremonies of Mali.",
+      fr: "Masques rituels utilisés dans les cérémonies ancestrales du Mali."
+    },
     img: "https://www.quaibranly.fr/fileadmin/_processed_/0/f/csm_70.1998.2.1_1_79e3b11d12.jpg"
   },
   {
     title: "Grande Vague de Kanagawa",
     artist: "Katsushika Hokusai",
     year: "1831",
-    category: "Œuvres asiatiques",
-    description: "Estampe japonaise emblématique du style ukiyo-e.",
+    category: "asian",
+    description: {
+      en: "Iconic Japanese print in ukiyo-e style.",
+      fr: "Estampe japonaise emblématique du style ukiyo-e."
+    },
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/The_Great_Wave_off_Kanagawa.jpg/1280px-The_Great_Wave_off_Kanagawa.jpg"
   },
   {
     title: "Statue de Bouddha de Gandhara",
     artist: "Art gréco-bouddhique",
     year: "IIe-IIIe siècle",
-    category: "Œuvres asiatiques",
-    description: "Sculpture représentant Bouddha, exemple de l'art gréco-bouddhique.",
+    category: "asian",
+    description: {
+      en: "Sculpture representing Buddha, example of Greco-Buddhist art.",
+      fr: "Sculpture représentant Bouddha, exemple de l'art gréco-bouddhique."
+    },
     img: "https://www.metmuseum.org/toah/images/hb/hb_1987.142.3.jpg"
   }
 ];
 
-const Collections = () => (
-  <>
-    <Navbar />
-    <main className="max-w-6xl mx-auto p-6">
-      <h1 className="text-3xl font-bold mb-4">Nos Collections</h1>
-      <p className="mb-6 text-lg text-muted-foreground">
-        Découvrez nos œuvres majeures issues de différentes époques et cultures, 
-        des chefs-d'œuvre de guerre aux trésors religieux, en passant par l'art européen, 
-        africain et asiatique.
-      </p>
-      
-      {/* Regroupement par catégories */}
-      {["Œuvres de guerre", "Œuvres religieuses", "Œuvres européennes", "Œuvres africaines", "Œuvres asiatiques"].map(category => (
-        <div key={category} className="mb-12">
-          <h2 className="text-2xl font-semibold mb-6 text-primary border-b pb-2">
-            {category}
-          </h2>
-          <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-            {artworks
-              .filter(artwork => artwork.category === category)
-              .map((artwork, idx) => (
-                <div key={artwork.title} className="rounded-lg shadow bg-card overflow-hidden hover:scale-105 transition-transform">
-                  <img 
-                    src={artwork.img}
-                    alt={artwork.title} 
-                    className="w-full h-48 object-cover" 
-                  />
-                  <div className="p-4">
-                    <h3 className="font-semibold text-lg mb-1">{artwork.title}</h3>
-                    <p className="text-sm text-muted-foreground mb-1">
-                      {artwork.artist} • {artwork.year}
-                    </p>
-                    <p className="text-muted-foreground text-sm leading-relaxed">
-                      {artwork.description}
-                    </p>
+const Collections = () => {
+  const { t, language } = useLanguage();
+
+  const categories = [
+    { key: "war", name: t.warArtworks },
+    { key: "religious", name: t.religiousArtworks },
+    { key: "european", name: t.europeanArtworks },
+    { key: "african", name: t.africanArtworks },
+    { key: "asian", name: t.asianArtworks }
+  ];
+
+  return (
+    <>
+      <Navbar />
+      <main className="max-w-6xl mx-auto p-6 animate-fade-in">
+        <h1 className="text-3xl font-bold mb-4">{t.collectionsTitle}</h1>
+        <p className="mb-6 text-lg text-muted-foreground">
+          {t.collectionsSubtitle}
+        </p>
+        
+        {categories.map((category, categoryIndex) => (
+          <div key={category.key} className="mb-12 animate-fade-in" style={{ animationDelay: `${categoryIndex * 100}ms` }}>
+            <h2 className="text-2xl font-semibold mb-6 text-primary border-b pb-2">
+              {category.name}
+            </h2>
+            <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+              {artworks
+                .filter(artwork => artwork.category === category.key)
+                .map((artwork, idx) => (
+                  <div key={artwork.title} className="rounded-lg shadow bg-card overflow-hidden hover:scale-105 transition-transform duration-300 animate-fade-in" style={{ animationDelay: `${(categoryIndex * 100) + (idx * 50)}ms` }}>
+                    <img 
+                      src={artwork.img}
+                      alt={artwork.title} 
+                      className="w-full h-48 object-cover" 
+                    />
+                    <div className="p-4">
+                      <h3 className="font-semibold text-lg mb-1">{artwork.title}</h3>
+                      <p className="text-sm text-muted-foreground mb-1">
+                        {artwork.artist} • {artwork.year}
+                      </p>
+                      <p className="text-muted-foreground text-sm leading-relaxed">
+                        {artwork.description[language]}
+                      </p>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+            </div>
           </div>
-        </div>
-      ))}
-    </main>
-  </>
-);
+        ))}
+      </main>
+      <Footer />
+    </>
+  );
+};
 
 export default Collections;
