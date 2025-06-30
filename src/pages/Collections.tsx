@@ -10,6 +10,7 @@ const artworks = [
     artist: "Pablo Picasso",
     year: "1937",
     category: "war",
+    price: "€2,500,000",
     description: {
       en: "Cubist masterpiece denouncing the horrors of the Spanish Civil War.",
       fr: "Chef-d'œuvre du cubisme dénonçant les horreurs de la guerre civile espagnole."
@@ -21,6 +22,7 @@ const artworks = [
     artist: "Eugène Delacroix",
     year: "1830",
     category: "war",
+    price: "€1,800,000",
     description: {
       en: "Symbol of the French Revolution and the struggle for freedom.",
       fr: "Symbole de la révolution française et de la lutte pour la liberté."
@@ -32,6 +34,7 @@ const artworks = [
     artist: "Francisco Goya",
     year: "1810-1820",
     category: "war",
+    price: "€950,000",
     description: {
       en: "Series of engravings denouncing the atrocities of the Napoleonic War in Spain.",
       fr: "Série de gravures dénonçant les atrocités de la guerre napoléonienne en Espagne."
@@ -43,6 +46,7 @@ const artworks = [
     artist: "Michel-Ange",
     year: "1508-1512",
     category: "religious",
+    price: "€5,000,000",
     description: {
       en: "Monumental fresco depicting scenes from Genesis.",
       fr: "Fresque monumentale représentant des scènes de la Genèse."
@@ -54,6 +58,7 @@ const artworks = [
     artist: "Léonard de Vinci",
     year: "1495-1498",
     category: "religious",
+    price: "€4,200,000",
     description: {
       en: "Depiction of Christ's last meal with his disciples.",
       fr: "Représentation du dernier repas du Christ avec ses disciples."
@@ -65,6 +70,7 @@ const artworks = [
     artist: "Michel-Ange",
     year: "1512",
     category: "religious",
+    price: "€3,800,000",
     description: {
       en: "Iconic fresco from the Sistine Chapel depicting the creation of man.",
       fr: "Fresque emblématique de la Chapelle Sixtine représentant la création de l'homme."
@@ -76,6 +82,7 @@ const artworks = [
     artist: "Léonard de Vinci",
     year: "1503-1519",
     category: "european",
+    price: "€3,000,000",
     description: {
       en: "Enigmatic portrait, symbol of the Italian Renaissance.",
       fr: "Portrait énigmatique, symbole de la Renaissance italienne."
@@ -87,6 +94,7 @@ const artworks = [
     artist: "Vincent van Gogh",
     year: "1889",
     category: "european",
+    price: "€2,100,000",
     description: {
       en: "Post-impressionist nocturnal landscape with swirling movements.",
       fr: "Paysage nocturne post-impressionniste aux mouvements tourbillonnants."
@@ -98,6 +106,7 @@ const artworks = [
     artist: "Vincent van Gogh",
     year: "1888",
     category: "european",
+    price: "€1,600,000",
     description: {
       en: "Series of still lifes depicting sunflowers in a vase.",
       fr: "Série de natures mortes représentant des tournesols dans un vase."
@@ -109,6 +118,7 @@ const artworks = [
     artist: "Art traditionnel Dogon",
     year: "XIVe siècle",
     category: "african",
+    price: "€750,000",
     description: {
       en: "Ritual masks used in ancestral ceremonies of Mali.",
       fr: "Masques rituels utilisés dans les cérémonies ancestrales du Mali."
@@ -120,6 +130,7 @@ const artworks = [
     artist: "Katsushika Hokusai",
     year: "1831",
     category: "asian",
+    price: "€1,200,000",
     description: {
       en: "Iconic Japanese print in ukiyo-e style.",
       fr: "Estampe japonaise emblématique du style ukiyo-e."
@@ -131,6 +142,7 @@ const artworks = [
     artist: "Art gréco-bouddhique",
     year: "IIe-IIIe siècle",
     category: "asian",
+    price: "€890,000",
     description: {
       en: "Sculpture representing Buddha, example of Greco-Buddhist art.",
       fr: "Sculpture représentant Bouddha, exemple de l'art gréco-bouddhique."
@@ -178,6 +190,9 @@ const Collections = () => {
                       <h3 className="font-semibold text-lg mb-1">{artwork.title}</h3>
                       <p className="text-sm text-muted-foreground mb-1">
                         {artwork.artist} • {artwork.year}
+                      </p>
+                      <p className="text-lg font-bold text-primary mb-2">
+                        {artwork.price}
                       </p>
                       <p className="text-muted-foreground text-sm leading-relaxed">
                         {artwork.description[language]}
