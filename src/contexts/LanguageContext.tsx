@@ -104,11 +104,11 @@ const translations: Record<Language, Translations> = {
     // Collections page
     collectionsTitle: 'Our Collections',
     collectionsSubtitle: 'Discover our major works from different eras and cultures, from war masterpieces to religious treasures, including European, African and Asian art.',
-    warArtworks: 'War Artworks',
-    religiousArtworks: 'Religious Artworks',
-    europeanArtworks: 'European Artworks',
-    africanArtworks: 'African Artworks',
-    asianArtworks: 'Asian Artworks',
+    warArtworks: 'War Art',
+    religiousArtworks: 'Religious Art',
+    europeanArtworks: 'European Art',
+    africanArtworks: 'African Art',
+    asianArtworks: 'Asian Art',
     
     // Expositions page
     expositionsTitle: 'Exhibitions',
