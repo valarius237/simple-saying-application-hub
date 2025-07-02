@@ -2,9 +2,98 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useLanguage } from "@/contexts/LanguageContext";
+import treeoflife from "./images/expositions/africa/treeoflife.jpeg"
+import thannhauser from "./images/expositions/africa/thannhauser.jpeg"
+import ooniking from "./images/expositions/africa/ooniking.jpeg"
+import chairofpower from "./images/expositions/africa/chairofpower.jpeg"
+import facemask from "./images/expositions/africa/facemask.jpeg"
+import throneofnjouteu from "./images/expositions/africa/throneofnjouteu.jpeg"
 
 const artworks = [
-  // Œuvres de guerre
+   {
+    title: "Tree of life",
+    artist: "Namibia Afrique",
+    year: "British museum",
+    category: "african",
+    price: "$1,800,000,00",
+    description: {
+      en: "Symbol of life, growth, and connection between all beings.",
+      fr: "Symbole de vie, croissance et lien entre tous êtres."
+    },
+    img: treeoflife
+  },
+   {
+    title: "Thannhauser Collection",
+    artist: "Kentucky, USA",
+    year: "GUGGENHEIM MUSEUM",
+    category: "african",
+    price: "$12,680,000,00",
+    description: {
+      en: "Masterpieces of modern art from Cézanne to Picasso.",
+      fr: "Chefs-d’œuvre de l’art moderne, de Cézanne à Picasso."
+    },
+    img: thannhauser
+  },
+   {
+    title: "Ooniking",
+    artist: "Zone Afrique",
+    year: "British museum",
+    category: "african",
+    price: "$750,000,00",
+    description: {
+      en: "Royal Yoruba sculpture symbolizing power, divinity, and ancestral heritage.",
+      fr: "Sculpture royale Yoruba symbolisant pouvoir, divinité et héritage ancestral."
+    },
+    img: ooniking
+  },
+   {
+    title: "Chair of power",
+    artist: "Zone Afrique",
+    year: "British museum",
+    category: "african",
+    price: "$7,000,000,00",
+    description: {
+      en: "Regal throne embodying authority, dignity, and cultural symbolism.",
+      fr: "Trône royal incarnant autorité, dignité et symbolisme culturel."
+    },
+    img: chairofpower
+  },
+   {
+    title: "Face mask",
+    artist: "Mblo Afrique",
+    year: "19th century",
+    category: "african",
+    price: "$1,300,000,00",
+    description: {
+      en: "Ceremonial mask representing identity, protection, and ancestral spirits.",
+      fr: "Masque rituel symbolisant identité, protection et esprits ancestraux."
+    },
+    img: facemask
+  },
+   {
+    title: "Throne of Njouteu",
+    artist: "Zone Afrique",
+    year: "Met Paris",
+    category: "african",
+    price: "$3,245,000,00",
+    description: {
+      en: "Sacred royal seat honoring Njouteu, guardian of tradition.",
+      fr: "Trône sacré honorant Njouteu, gardien des traditions."
+    },
+    img: throneofnjouteu
+  },
+   {
+    title: "Mangaaka",
+    artist: "Youmbe group",
+    year: "The met",
+    category: "african",
+    price: "$1,385,000,00",
+    description: {
+      en: "Power figure enforcing justice, protection, and spiritual authority.",
+      fr: "Figure de pouvoir imposant justice, protection et autorité spirituelle."
+    },
+    img: treeoflife
+  },
   {
     title: "Guernica",
     artist: "Pablo Picasso",
@@ -114,18 +203,6 @@ const artworks = [
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Vincent_Willem_van_Gogh_127.jpg/800px-Vincent_Willem_van_Gogh_127.jpg"
   },
   {
-    title: "Masques Dogon",
-    artist: "Art traditionnel Dogon",
-    year: "XIVe siècle",
-    category: "african",
-    price: "€750,000",
-    description: {
-      en: "Ritual masks used in ancestral ceremonies of Mali.",
-      fr: "Masques rituels utilisés dans les cérémonies ancestrales du Mali."
-    },
-    img: "https://www.quaibranly.fr/fileadmin/_processed_/0/f/csm_70.1998.2.1_1_79e3b11d12.jpg"
-  },
-  {
     title: "Grande Vague de Kanagawa",
     artist: "Katsushika Hokusai",
     year: "1831",
@@ -155,10 +232,10 @@ const Collections = () => {
   const { t, language } = useLanguage();
 
   const categories = [
+    { key: "african", name: t.africanArtworks },
     { key: "war", name: t.warArtworks },
     { key: "religious", name: t.religiousArtworks },
     { key: "european", name: t.europeanArtworks },
-    { key: "african", name: t.africanArtworks },
     { key: "asian", name: t.asianArtworks }
   ];
 
