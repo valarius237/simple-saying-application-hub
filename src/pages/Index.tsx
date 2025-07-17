@@ -2,6 +2,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useLanguage } from "@/contexts/LanguageContext";
+import logo from "./images/logo/logo.jpeg";
 
 const Index = () => {
   const { t } = useLanguage();
@@ -20,7 +21,7 @@ const Index = () => {
         {/* Section À la une */}
         <section className="w-full mb-14 max-w-4xl animate-fade-in" style={{ animationDelay: '200ms' }}>
           <div className="flex flex-col md:flex-row items-center bg-card rounded-xl shadow-md overflow-hidden hover-scale transition-all duration-300">
-            <img src="https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?w=500" alt="Oeuvre à la une"
+            <img src={logo} alt="Oeuvre à la une"
               className="h-56 w-full md:w-72 object-cover rounded-t-xl md:rounded-l-xl md:rounded-t-none"/>
             <div className="p-6 flex flex-col justify-center">
               <h2 className="text-2xl font-semibold mb-1">{t.featuredTitle}</h2>

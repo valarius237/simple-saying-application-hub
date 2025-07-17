@@ -5,6 +5,7 @@ import { useState } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 import ThemeToggle from "@/components/ThemeToggle";
+import logo from "../pages/images/logo/logo.jpeg"
 
 const Navbar = () => {
   const location = useLocation();
@@ -33,7 +34,7 @@ const Navbar = () => {
       <div className="flex items-center justify-between max-w-6xl mx-auto">
         {/* Logo */}
         <div className="flex items-center gap-2 text-2xl font-bold text-primary hover-scale transition-all duration-300">
-          <Building2 className="text-primary animate-pulse" size={28} />
+          <img src={logo} alt="logo" width={30} height={30}/>
           Global Art Conglomerate
         </div>
 
