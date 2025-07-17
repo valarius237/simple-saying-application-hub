@@ -91,7 +91,7 @@ const translations: Record<Language, Translations> = {
     artworksForSale: 'Artworks for Sale',
     
     // Home page
-    welcomeTitle: 'Welcome to Inspired Museum',
+    welcomeTitle: 'Welcome to Global Art Conglomerate',
     welcomeSubtitle: 'A place where history, art and discovery meet to amaze young and old. Explore our unique collections and temporary exhibitions!',
     featuredTitle: 'Featured: The Gate of Time',
     featuredSubtitle: 'Discover this monumental piece from our ancient collection, witness to the passage of civilizations.',
@@ -167,7 +167,7 @@ const translations: Record<Language, Translations> = {
     artworksForSale: 'Œuvres à vendre',
     
     // Home page
-    welcomeTitle: 'Bienvenue au Musée Inspiré',
+    welcomeTitle: 'Bienvenue au Global Art Conglomerate',
     welcomeSubtitle: 'Un lieu où l\'histoire, l\'art et la découverte se croisent pour émerveiller petits et grands. Explorez nos collections uniques et expositions temporaires !',
     featuredTitle: 'À la une : La Porte du Temps',
     featuredSubtitle: 'Découvrez cette pièce monumentale de notre collection antique, témoin du passage des civilisations.',

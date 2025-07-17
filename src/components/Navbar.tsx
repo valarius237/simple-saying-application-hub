@@ -34,7 +34,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex items-center gap-2 text-2xl font-bold text-primary hover-scale transition-all duration-300">
           <Building2 className="text-primary animate-pulse" size={28} />
-          Musée Inspiré
+          Global Art Conglomerate
         </div>
 
         {/* Desktop Navigation */}
