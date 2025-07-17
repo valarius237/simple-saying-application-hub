@@ -1,11 +1,12 @@
+
 import { Link, useLocation } from "react-router-dom";
-import { Building2, Menu, X, Globe } from "lucide-react";
+import { Menu, X, Globe } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 import ThemeToggle from "@/components/ThemeToggle";
-import logo from "../pages/images/logo/logo.jpeg"
+import Logo from "@/components/Logo";
 
 const Navbar = () => {
   const location = useLocation();
@@ -33,10 +34,9 @@ const Navbar = () => {
     <nav className="bg-background border-b border-border px-4 py-3 sticky top-0 z-50 animate-fade-in">
       <div className="flex items-center justify-between max-w-6xl mx-auto">
         {/* Logo */}
-        <div className="flex items-center gap-2 text-2xl font-bold text-primary hover-scale transition-all duration-300">
-          <img src={logo} alt="logo" width={30} height={30}/>
-          Global Art Conglomerate
-        </div>
+        <Link to="/" className="hover-scale transition-all duration-300">
+          <Logo size="md" />
+        </Link>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-6">
