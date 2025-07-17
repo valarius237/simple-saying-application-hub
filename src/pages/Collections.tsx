@@ -1,4 +1,3 @@
-
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -30,7 +29,7 @@ const artworks = [
     price: "$12,680,000.00",
     description: {
       en: "Masterpieces of modern art from Cézanne to Picasso.",
-      fr: "Chefs-d’œuvre de l’art moderne, de Cézanne à Picasso."
+      fr: "Chefs-d'œuvre de l'art moderne, de Cézanne à Picasso."
     },
     img: thannhauser
   },
@@ -116,7 +115,7 @@ const artworks = [
       en: "Depiction of Christ's last meal with his disciples.",
       fr: "Représentation du dernier repas du Christ avec ses disciples."
     },
-    img: "https://upload.wikimedia.org/wikipedia/commons/4/4b/%C3%9Altima_Cena_-_Da_Vinci_5.jpg"
+    img: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop"
   },
   {
     title: "La Nuit étoilée",

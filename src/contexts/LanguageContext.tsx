@@ -10,6 +10,7 @@ interface Translations {
   visit: string;
   about: string;
   contact: string;
+  artworksForSale: string;
   
   // Home page
   welcomeTitle: string;
@@ -38,6 +39,12 @@ interface Translations {
   europeanArtworks: string;
   africanArtworks: string;
   asianArtworks: string;
+  
+  // Artworks for sale page
+  artworksForSaleTitle: string;
+  artworksForSaleSubtitle: string;
+  availableNow: string;
+  contactForPurchase: string;
   
   // Expositions page
   expositionsTitle: string;
@@ -81,6 +88,7 @@ const translations: Record<Language, Translations> = {
     visit: 'Visit',
     about: 'About',
     contact: 'Contact',
+    artworksForSale: 'Artworks for Sale',
     
     // Home page
     welcomeTitle: 'Welcome to Inspired Museum',
@@ -109,6 +117,12 @@ const translations: Record<Language, Translations> = {
     europeanArtworks: 'European Art',
     africanArtworks: 'African Art',
     asianArtworks: 'Asian Art',
+    
+    // Artworks for sale page
+    artworksForSaleTitle: 'Artworks for Sale',
+    artworksForSaleSubtitle: 'Discover our exclusive selection of artworks available for purchase. Each piece comes with a certificate of authenticity.',
+    availableNow: 'Available now',
+    contactForPurchase: 'Contact us for purchase',
     
     // Expositions page
     expositionsTitle: 'Exhibitions',
@@ -150,6 +164,7 @@ const translations: Record<Language, Translations> = {
     visit: 'Visiter',
     about: 'À propos',
     contact: 'Contact',
+    artworksForSale: 'Œuvres à vendre',
     
     // Home page
     welcomeTitle: 'Bienvenue au Musée Inspiré',
@@ -178,6 +193,12 @@ const translations: Record<Language, Translations> = {
     europeanArtworks: 'Œuvres européennes',
     africanArtworks: 'Œuvres africaines',
     asianArtworks: 'Œuvres asiatiques',
+    
+    // Artworks for sale page
+    artworksForSaleTitle: 'Œuvres à vendre',
+    artworksForSaleSubtitle: 'Découvrez notre sélection exclusive d\'œuvres disponibles à l\'achat. Chaque pièce est accompagnée d\'un certificat d\'authenticité.',
+    availableNow: 'Disponible maintenant',
+    contactForPurchase: 'Contactez-nous pour l\'achat',
     
     // Expositions page
     expositionsTitle: 'Expositions',

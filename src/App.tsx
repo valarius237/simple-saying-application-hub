@@ -8,6 +8,7 @@ import { LanguageProvider } from "@/contexts/LanguageContext";
 import { ThemeProvider } from "@/contexts/ThemeContext";
 import Index from "./pages/Index";
 import Collections from "./pages/Collections";
+import ArtworksForSale from "./pages/ArtworksForSale";
 import Expositions from "./pages/Expositions";
 import Visit from "./pages/Visit";
 import About from "./pages/About";
@@ -27,6 +28,7 @@ const App = () => (
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/collections" element={<Collections />} />
+              <Route path="/artworks-for-sale" element={<ArtworksForSale />} />
               <Route path="/expositions" element={<Expositions />} />
               <Route path="/visit" element={<Visit />} />
               <Route path="/about" element={<About />} />

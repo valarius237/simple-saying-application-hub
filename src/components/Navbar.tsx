@@ -1,4 +1,3 @@
-
 import { Link, useLocation } from "react-router-dom";
 import { Building2, Menu, X, Globe } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -15,8 +14,7 @@ const Navbar = () => {
   const navLinks = [
     { name: t.home, path: "/" },
     { name: t.collections, path: "/collections" },
-    { name: t.expositions, path: "/expositions" },
-    { name: t.visit, path: "/visit" },
+    { name: t.artworksForSale, path: "/artworks-for-sale" },
     { name: t.about, path: "/about" },
     { name: t.contact, path: "/contact" },
   ];
