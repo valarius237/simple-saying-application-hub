@@ -99,7 +99,7 @@ const artworks = [
     artist: "Pablo Picasso",
     year: "1937",
     category: "war",
-    price: "€2,500,000",
+    price: "$2,500,000.00",
     description: {
       en: "Cubist masterpiece denouncing the horrors of the Spanish Civil War.",
       fr: "Chef-d'œuvre du cubisme dénonçant les horreurs de la guerre civile espagnole."
@@ -107,47 +107,11 @@ const artworks = [
     img: "https://upload.wikimedia.org/wikipedia/en/7/74/PicassoGuernica.jpg"
   },
   {
-    title: "La Liberté guidant le peuple",
-    artist: "Eugène Delacroix",
-    year: "1830",
-    category: "war",
-    price: "€1,800,000",
-    description: {
-      en: "Symbol of the French Revolution and the struggle for freedom.",
-      fr: "Symbole de la révolution française et de la lutte pour la liberté."
-    },
-    img: "https://upload.wikimedia.org/wikipedia/commons/a/a7/Eug%C3%A8ne_Delacroix_-_La_libert%C3%A9_guidant_le_peuple.jpg"
-  },
-  {
-    title: "Les Désastres de la guerre",
-    artist: "Francisco Goya",
-    year: "1810-1820",
-    category: "war",
-    price: "€950,000",
-    description: {
-      en: "Series of engravings denouncing the atrocities of the Napoleonic War in Spain.",
-      fr: "Série de gravures dénonçant les atrocités de la guerre napoléonienne en Espagne."
-    },
-    img: "https://www.museodelprado.es/typo3temp/pics/690988c1bb.jpg"
-  },
-  {
-    title: "La Chapelle Sixtine",
-    artist: "Michel-Ange",
-    year: "1508-1512",
-    category: "religious",
-    price: "€5,000,000",
-    description: {
-      en: "Monumental fresco depicting scenes from Genesis.",
-      fr: "Fresque monumentale représentant des scènes de la Genèse."
-    },
-    img: "https://www.musei-vaticani.va/content/dam/musei-vaticani/immagini/collezioni/musei/cappella-sistina/00-Cappella-Sistina.jpg"
-  },
-  {
     title: "La Cène",
     artist: "Léonard de Vinci",
     year: "1495-1498",
     category: "religious",
-    price: "€4,200,000",
+    price: "$4,200,000.00",
     description: {
       en: "Depiction of Christ's last meal with his disciples.",
       fr: "Représentation du dernier repas du Christ avec ses disciples."
@@ -155,35 +119,11 @@ const artworks = [
     img: "https://upload.wikimedia.org/wikipedia/commons/4/4b/%C3%9Altima_Cena_-_Da_Vinci_5.jpg"
   },
   {
-    title: "La Création d'Adam",
-    artist: "Michel-Ange",
-    year: "1512",
-    category: "religious",
-    price: "€3,800,000",
-    description: {
-      en: "Iconic fresco from the Sistine Chapel depicting the creation of man.",
-      fr: "Fresque emblématique de la Chapelle Sixtine représentant la création de l'homme."
-    },
-    img: "https://www.musei-vaticani.va/content/dam/musei-vaticani/immagini/collezioni/musei/cappella-sistina/01-Cappella-Sistina-Creazione-di-Adamo.jpg"
-  },
-  {
-    title: "La Joconde",
-    artist: "Léonard de Vinci",
-    year: "1503-1519",
-    category: "european",
-    price: "€3,000,000",
-    description: {
-      en: "Enigmatic portrait, symbol of the Italian Renaissance.",
-      fr: "Portrait énigmatique, symbole de la Renaissance italienne."
-    },
-    img: "https://upload.wikimedia.org/wikipedia/commons/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg"
-  },
-  {
     title: "La Nuit étoilée",
     artist: "Vincent van Gogh",
     year: "1889",
     category: "european",
-    price: "€2,100,000",
+    price: "$2,100,000.00",
     description: {
       en: "Post-impressionist nocturnal landscape with swirling movements.",
       fr: "Paysage nocturne post-impressionniste aux mouvements tourbillonnants."
@@ -195,7 +135,7 @@ const artworks = [
     artist: "Vincent van Gogh",
     year: "1888",
     category: "european",
-    price: "€1,600,000",
+    price: "$1,600,000.00",
     description: {
       en: "Series of still lifes depicting sunflowers in a vase.",
       fr: "Série de natures mortes représentant des tournesols dans un vase."
@@ -207,25 +147,13 @@ const artworks = [
     artist: "Katsushika Hokusai",
     year: "1831",
     category: "asian",
-    price: "€1,200,000",
+    price: "$1,200,000.00",
     description: {
       en: "Iconic Japanese print in ukiyo-e style.",
       fr: "Estampe japonaise emblématique du style ukiyo-e."
     },
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/The_Great_Wave_off_Kanagawa.jpg/1280px-The_Great_Wave_off_Kanagawa.jpg"
   },
-  {
-    title: "Statue de Bouddha de Gandhara",
-    artist: "Art gréco-bouddhique",
-    year: "IIe-IIIe siècle",
-    category: "asian",
-    price: "€890,000",
-    description: {
-      en: "Sculpture representing Buddha, example of Greco-Buddhist art.",
-      fr: "Sculpture représentant Bouddha, exemple de l'art gréco-bouddhique."
-    },
-    img: "https://www.metmuseum.org/toah/images/hb/hb_1987.142.3.jpg"
-  }
 ];
 
 const Collections = () => {
