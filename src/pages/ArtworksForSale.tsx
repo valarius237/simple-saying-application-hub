@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Mail } from "lucide-react";
 import mantum from "./images/vente/mantoum.jpeg";
 import shungwu from "./images/vente/shungwu.jpeg";
+import artists from "./images/vente/artists.jpeg";
 
 const artworksForSale = [
   {
@@ -38,7 +39,7 @@ const artworksForSale = [
       en: "célébration majestueuse des talents et traditions royales africaines.",
       fr: "majestic celebration of African royal talents and traditions."
     },
-    img: shungwu,
+    img: artists,
     available: true
   },
 ];
