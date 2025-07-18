@@ -80,8 +80,36 @@ const Index = () => {
           </div>
         </section>
 
+        {/* Section Partenaires */}
+        <section className="w-full mb-16 max-w-6xl animate-fade-in" style={{ animationDelay: '700ms' }}>
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold mb-3">{t.partnersTitle}</h2>
+            <p className="text-muted-foreground text-lg">{t.partnersSubtitle}</p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center">
+            <div className="bg-card rounded-lg shadow p-4 flex items-center justify-center h-24 w-full hover-scale transition-all duration-300">
+              <img src="/src/assets/partners/hsbc-logo.png" alt="HSBC" className="max-h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            </div>
+            <div className="bg-card rounded-lg shadow p-4 flex items-center justify-center h-24 w-full hover-scale transition-all duration-300">
+              <img src="/src/assets/partners/medmera-bank-logo.png" alt="MedMera Bank" className="max-h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            </div>
+            <div className="bg-card rounded-lg shadow p-4 flex items-center justify-center h-24 w-full hover-scale transition-all duration-300">
+              <img src="/src/assets/partners/citibank-logo.png" alt="Citibank" className="max-h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            </div>
+            <div className="bg-card rounded-lg shadow p-4 flex items-center justify-center h-24 w-full hover-scale transition-all duration-300">
+              <img src="/src/assets/partners/goldman-sachs-logo.png" alt="Goldman Sachs" className="max-h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            </div>
+            <div className="bg-card rounded-lg shadow p-4 flex items-center justify-center h-24 w-full hover-scale transition-all duration-300">
+              <img src="/src/assets/partners/novartis-logo.png" alt="Novartis Foundation" className="max-h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            </div>
+            <div className="bg-card rounded-lg shadow p-4 flex items-center justify-center h-24 w-full hover-scale transition-all duration-300">
+              <img src="/src/assets/partners/accord-logo.png" alt="Accord Pharmaceuticals" className="max-h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            </div>
+          </div>
+        </section>
+
         {/* Bloc À propos */}
-        <section className="w-full mt-10 max-w-3xl animate-fade-in" style={{ animationDelay: '700ms' }}>
+        <section className="w-full mt-10 max-w-3xl animate-fade-in" style={{ animationDelay: '800ms' }}>
           <div className="bg-accent/30 rounded-xl shadow text-center p-8 flex flex-col items-center">
             <h2 className="text-2xl font-semibold mb-3">{t.aboutMuseumTitle}</h2>
             <p className="text-muted-foreground mb-2">

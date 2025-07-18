@@ -77,6 +77,10 @@ interface Translations {
   socialNetworks: string;
   navigation: string;
   allRightsReserved: string;
+  
+  // Partners section
+  partnersTitle: string;
+  partnersSubtitle: string;
 }
 
 const translations: Record<Language, Translations> = {
@@ -154,7 +158,11 @@ const translations: Record<Language, Translations> = {
     // Footer
     socialNetworks: 'Social networks',
     navigation: 'Navigation',
-    allRightsReserved: 'All rights reserved.'
+    allRightsReserved: 'All rights reserved.',
+    
+    // Partners section
+    partnersTitle: 'Our Partners',
+    partnersSubtitle: 'They accompany us in our mission to democratize art'
   },
   fr: {
     // Navigation
@@ -230,7 +238,11 @@ const translations: Record<Language, Translations> = {
     // Footer
     socialNetworks: 'Réseaux sociaux',
     navigation: 'Navigation',
-    allRightsReserved: 'Tous droits réservés.'
+    allRightsReserved: 'Tous droits réservés.',
+    
+    // Partners section
+    partnersTitle: 'Nos Partenaires',
+    partnersSubtitle: 'Ils nous accompagnent dans notre mission de démocratiser l\'art'
   }
 };
 
