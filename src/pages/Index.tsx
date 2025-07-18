@@ -4,6 +4,14 @@ import Footer from "@/components/Footer";
 import { useLanguage } from "@/contexts/LanguageContext";
 import Logo from "@/components/Logo";
 
+// Import partner logos
+import hsbcLogo from "../assets/partners/hsbc-logo.png";
+import medmeraLogo from "../assets/partners/medmera-bank-logo.png";
+import citibankLogo from "../assets/partners/citibank-logo.png";
+import goldmanLogo from "../assets/partners/goldman-sachs-logo.png";
+import novartisLogo from "../assets/partners/novartis-logo.png";
+import accordLogo from "../assets/partners/accord-logo.png";
+
 const Index = () => {
   const { t } = useLanguage();
   
@@ -88,22 +96,22 @@ const Index = () => {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center">
             <div className="bg-card rounded-lg shadow p-4 flex items-center justify-center h-24 w-full hover-scale transition-all duration-300">
-              <img src="/src/assets/partners/hsbc-logo.png" alt="HSBC" className="max-h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+              <img src={hsbcLogo} alt="HSBC" className="max-h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
             </div>
             <div className="bg-card rounded-lg shadow p-4 flex items-center justify-center h-24 w-full hover-scale transition-all duration-300">
-              <img src="/src/assets/partners/medmera-bank-logo.png" alt="MedMera Bank" className="max-h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+              <img src={medmeraLogo} alt="MedMera Bank" className="max-h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
             </div>
             <div className="bg-card rounded-lg shadow p-4 flex items-center justify-center h-24 w-full hover-scale transition-all duration-300">
-              <img src="/src/assets/partners/citibank-logo.png" alt="Citibank" className="max-h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+              <img src={citibankLogo} alt="Citibank" className="max-h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
             </div>
             <div className="bg-card rounded-lg shadow p-4 flex items-center justify-center h-24 w-full hover-scale transition-all duration-300">
-              <img src="/src/assets/partners/goldman-sachs-logo.png" alt="Goldman Sachs" className="max-h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+              <img src={goldmanLogo} alt="Goldman Sachs" className="max-h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
             </div>
             <div className="bg-card rounded-lg shadow p-4 flex items-center justify-center h-24 w-full hover-scale transition-all duration-300">
-              <img src="/src/assets/partners/novartis-logo.png" alt="Novartis Foundation" className="max-h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+              <img src={novartisLogo} alt="Novartis Foundation" className="max-h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
             </div>
             <div className="bg-card rounded-lg shadow p-4 flex items-center justify-center h-24 w-full hover-scale transition-all duration-300">
-              <img src="/src/assets/partners/accord-logo.png" alt="Accord Pharmaceuticals" className="max-h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+              <img src={accordLogo} alt="Accord Pharmaceuticals" className="max-h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
             </div>
           </div>
         </section>
