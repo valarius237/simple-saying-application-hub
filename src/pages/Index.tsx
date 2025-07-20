@@ -116,8 +116,104 @@ const Index = () => {
           </div>
         </section>
 
+        {/* Section Notre Bâtiment */}
+        <section className="w-full mb-16 max-w-6xl animate-fade-in" style={{ animationDelay: '800ms' }}>
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold mb-3">{t.ourBuilding}</h2>
+            <p className="text-muted-foreground text-lg">{t.buildingDescription}</p>
+          </div>
+          <div className="bg-card rounded-xl shadow-lg overflow-hidden hover-scale transition-all duration-300">
+            <img 
+              src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1200&h=600&fit=crop" 
+              alt="Global Art Conglomerate Building" 
+              className="w-full h-96 object-cover"
+            />
+          </div>
+        </section>
+
+        {/* Section Espaces Intérieurs */}
+        <section className="w-full mb-16 max-w-6xl animate-fade-in" style={{ animationDelay: '900ms' }}>
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold mb-3">{t.interiorSpaces}</h2>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-card rounded-lg shadow-lg overflow-hidden hover-scale transition-all duration-300">
+              <img 
+                src="https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=600&h=400&fit=crop" 
+                alt="Conference Room" 
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">{t.conferenceRoom}</h3>
+                <p className="text-muted-foreground">Espace moderne pour nos événements et conférences artistiques.</p>
+              </div>
+            </div>
+            <div className="bg-card rounded-lg shadow-lg overflow-hidden hover-scale transition-all duration-300">
+              <img 
+                src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?w=600&h=400&fit=crop" 
+                alt="Executive Office" 
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">{t.executiveOffice}</h3>
+                <p className="text-muted-foreground">Bureau de direction avec une vue imprenable sur la collection.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section Équipe Dirigeante */}
+        <section className="w-full mb-16 max-w-6xl animate-fade-in" style={{ animationDelay: '1000ms' }}>
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold mb-3">{t.leadership}</h2>
+            <p className="text-muted-foreground text-lg">{t.leadershipDescription}</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="bg-card rounded-lg shadow-lg p-6 text-center hover-scale transition-all duration-300">
+              <img 
+                src="https://images.unsplash.com/photo-1494790108755-2616b14997c8?w=150&h=150&fit=crop&crop=face" 
+                alt="Marie Dubois" 
+                className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+              />
+              <h3 className="text-lg font-semibold mb-1">Marie Dubois</h3>
+              <p className="text-primary font-medium mb-2">Directrice Générale</p>
+              <p className="text-muted-foreground text-sm">25 ans d'expérience dans l'art contemporain</p>
+            </div>
+            <div className="bg-card rounded-lg shadow-lg p-6 text-center hover-scale transition-all duration-300">
+              <img 
+                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face" 
+                alt="Jean Martin" 
+                className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+              />
+              <h3 className="text-lg font-semibold mb-1">Jean Martin</h3>
+              <p className="text-primary font-medium mb-2">Directeur Artistique</p>
+              <p className="text-muted-foreground text-sm">Expert en curation et acquisitions d'art</p>
+            </div>
+            <div className="bg-card rounded-lg shadow-lg p-6 text-center hover-scale transition-all duration-300">
+              <img 
+                src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&h=150&fit=crop&crop=face" 
+                alt="Sophie Laurent" 
+                className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+              />
+              <h3 className="text-lg font-semibold mb-1">Sophie Laurent</h3>
+              <p className="text-primary font-medium mb-2">Responsable Collections</p>
+              <p className="text-muted-foreground text-sm">Spécialiste en conservation et restauration</p>
+            </div>
+            <div className="bg-card rounded-lg shadow-lg p-6 text-center hover-scale transition-all duration-300">
+              <img 
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" 
+                alt="Pierre Bernard" 
+                className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+              />
+              <h3 className="text-lg font-semibold mb-1">Pierre Bernard</h3>
+              <p className="text-primary font-medium mb-2">Directeur Financier</p>
+              <p className="text-muted-foreground text-sm">Gestion stratégique et développement</p>
+            </div>
+          </div>
+        </section>
+
         {/* Bloc À propos */}
-        <section className="w-full mt-10 max-w-3xl animate-fade-in" style={{ animationDelay: '800ms' }}>
+        <section className="w-full mt-10 max-w-3xl animate-fade-in" style={{ animationDelay: '1100ms' }}>
           <div className="bg-accent/30 rounded-xl shadow text-center p-8 flex flex-col items-center">
             <h2 className="text-2xl font-semibold mb-3">{t.aboutMuseumTitle}</h2>
             <p className="text-muted-foreground mb-2">

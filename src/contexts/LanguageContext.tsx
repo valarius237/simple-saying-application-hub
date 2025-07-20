@@ -30,6 +30,13 @@ interface Translations {
   aboutMuseumTitle: string;
   aboutMuseumText1: string;
   aboutMuseumText2: string;
+  ourBuilding: string;
+  buildingDescription: string;
+  interiorSpaces: string;
+  conferenceRoom: string;
+  executiveOffice: string;
+  leadership: string;
+  leadershipDescription: string;
   
   // Collections page
   collectionsTitle: string;
@@ -112,6 +119,13 @@ const translations: Record<Language, Translations> = {
     aboutMuseumTitle: 'About the museum',
     aboutMuseumText1: 'Founded in 2025, the Inspired Museum draws its inspiration from the greatest museums in the world to offer everyone an immersive experience between past, present and discoveries.',
     aboutMuseumText2: 'Modern architecture, interactive exhibitions and educational activities punctuate the life of our institution.',
+    ourBuilding: 'Our Building',
+    buildingDescription: 'Modern architecture that reflects our contemporary artistic vision.',
+    interiorSpaces: 'Interior Spaces',
+    conferenceRoom: 'Conference Room',
+    executiveOffice: 'Executive Office',
+    leadership: 'Our Leadership Team',
+    leadershipDescription: 'Passionate experts who guide our artistic vision.',
     
     // Collections page
     collectionsTitle: 'Our Collections',
@@ -192,6 +206,13 @@ const translations: Record<Language, Translations> = {
     aboutMuseumTitle: 'À propos du musée',
     aboutMuseumText1: 'Fondé en 2025, le Musée Inspiré puise son inspiration dans les plus grands musées du monde pour offrir à chacun·e une expérience immersive entre passé, présent et découvertes.',
     aboutMuseumText2: 'Architecture moderne, expositions interactives et actions éducatives rythment la vie de notre institution.',
+    ourBuilding: 'Notre Bâtiment',
+    buildingDescription: 'Un architecture moderne qui reflète notre vision artistique contemporaine.',
+    interiorSpaces: 'Espaces Intérieurs',
+    conferenceRoom: 'Salle de Conférence',
+    executiveOffice: 'Bureau Exécutif',
+    leadership: 'Notre Équipe Dirigeante',
+    leadershipDescription: 'Des experts passionnés qui guident notre vision artistique.',
     
     // Collections page
     collectionsTitle: 'Nos Collections',
