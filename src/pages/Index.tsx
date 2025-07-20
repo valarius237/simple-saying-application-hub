@@ -12,6 +12,10 @@ import goldmanLogo from "../assets/partners/goldman-sachs-logo.png";
 import novartisLogo from "../assets/partners/novartis-logo.png";
 import accordLogo from "../assets/partners/accord-logo.png";
 
+// Import building and room images
+import buildingWithLogo from "../assets/building-with-logo.jpg";
+import newConferenceRoom from "../assets/conference-room-new.jpg";
+
 const Index = () => {
   const { t } = useLanguage();
   
@@ -124,7 +128,7 @@ const Index = () => {
           </div>
           <div className="bg-card rounded-xl shadow-lg overflow-hidden hover-scale transition-all duration-300">
             <img 
-              src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1200&h=600&fit=crop" 
+              src={buildingWithLogo} 
               alt="Global Art Conglomerate Building" 
               className="w-full h-96 object-cover"
             />
@@ -139,7 +143,7 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-card rounded-lg shadow-lg overflow-hidden hover-scale transition-all duration-300">
               <img 
-                src="https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=600&h=400&fit=crop" 
+                src={newConferenceRoom} 
                 alt="Conference Room" 
                 className="w-full h-64 object-cover"
               />
