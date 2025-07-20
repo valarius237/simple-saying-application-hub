@@ -13,8 +13,9 @@ import novartisLogo from "../assets/partners/novartis-logo.png";
 import accordLogo from "../assets/partners/accord-logo.png";
 
 // Import building and room images
-import buildingWithLogo from "../assets/building-with-logo.jpg";
+import buildingGlobalArt from "../assets/building-global-art.jpg";
 import newConferenceRoom from "../assets/conference-room-new.jpg";
+import marieDuboisCeo from "../assets/marie-dubois-ceo.jpg";
 
 const Index = () => {
   const { t } = useLanguage();
@@ -128,7 +129,7 @@ const Index = () => {
           </div>
           <div className="bg-card rounded-xl shadow-lg overflow-hidden hover-scale transition-all duration-300">
             <img 
-              src={buildingWithLogo} 
+              src={buildingGlobalArt} 
               alt="Global Art Conglomerate Building" 
               className="w-full h-96 object-cover"
             />
@@ -175,7 +176,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-card rounded-lg shadow-lg p-6 text-center hover-scale transition-all duration-300">
               <img 
-                src="https://images.unsplash.com/photo-1494790108755-2616b14997c8?w=150&h=150&fit=crop&crop=face" 
+                src={marieDuboisCeo} 
                 alt="Marie Dubois" 
                 className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
               />

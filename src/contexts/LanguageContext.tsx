@@ -207,7 +207,7 @@ const translations: Record<Language, Translations> = {
     aboutMuseumText1: 'Fondé en 2025, le Musée Inspiré puise son inspiration dans les plus grands musées du monde pour offrir à chacun·e une expérience immersive entre passé, présent et découvertes.',
     aboutMuseumText2: 'Architecture moderne, expositions interactives et actions éducatives rythment la vie de notre institution.',
     ourBuilding: 'Notre Bâtiment',
-    buildingDescription: 'Un architecture moderne qui reflète notre vision artistique contemporaine.',
+    buildingDescription: 'Une architecture moderne qui reflète notre vision artistique contemporaine.',
     interiorSpaces: 'Espaces Intérieurs',
     conferenceRoom: 'Salle de Conférence',
     executiveOffice: 'Bureau Exécutif',
