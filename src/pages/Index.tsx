@@ -106,25 +106,6 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Sections principales */}
-        <section className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16 w-full max-w-6xl">
-          <div className="bg-card rounded-lg shadow text-center p-6 flex flex-col items-center hover-scale transition-all duration-300 animate-fade-in" style={{ animationDelay: '300ms' }}>
-            <img className="rounded-lg object-cover h-44 mb-4" src="https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?w=400" alt="Collections"/>
-            <h2 className="text-lg font-semibold mb-2">{t.collections}</h2>
-            <p className="text-muted-foreground mb-3">Œuvres majeures et pièces rares accessibles à tous.</p>
-          </div>
-          <div className="bg-card rounded-lg shadow text-center p-6 flex flex-col items-center hover-scale transition-all duration-300 animate-fade-in" style={{ animationDelay: '400ms' }}>
-            <img className="rounded-lg object-cover h-44 mb-4" src="https://images.unsplash.com/photo-1492321936769-b49830bc1d1e?w=400" alt="Expositions"/>
-            <h2 className="text-lg font-semibold mb-2">{t.expositions}</h2>
-            <p className="text-muted-foreground mb-3">Des expositions temporaires pour voyager dans le temps.</p>
-          </div>
-          <div className="bg-card rounded-lg shadow text-center p-6 flex flex-col items-center hover-scale transition-all duration-300 animate-fade-in" style={{ animationDelay: '500ms' }}>
-            <img className="rounded-lg object-cover h-44 mb-4" src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=400" alt="Visiter"/>
-            <h2 className="text-lg font-semibold mb-2">{t.visit}</h2>
-            <p className="text-muted-foreground mb-3">Préparer sa visite, horaires, tarifs et infos pratiques.</p>
-          </div>
-        </section>
-
         {/* Section Partenaires */}
         <section className="w-full mb-16 max-w-6xl animate-fade-in" style={{ animationDelay: '700ms' }}>
           <div className="text-center mb-8">
