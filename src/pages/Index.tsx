@@ -45,6 +45,67 @@ const Index = () => {
           </div>
         </section>
 
+        {/* Section Services */}
+        <section className="w-full mb-16 max-w-6xl animate-fade-in" style={{ animationDelay: '150ms' }}>
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold mb-3">{t.servicesTitle}</h2>
+            <p className="text-muted-foreground text-lg">{t.servicesSubtitle}</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-card rounded-lg shadow-lg p-6 text-center hover-scale transition-all duration-300">
+              <div className="w-12 h-12 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <span className="text-primary font-bold text-lg">A</span>
+              </div>
+              <h3 className="text-lg font-semibold mb-2">{t.advisory}</h3>
+              <p className="text-muted-foreground text-sm">{t.advisoryDesc}</p>
+            </div>
+            <div className="bg-card rounded-lg shadow-lg p-6 text-center hover-scale transition-all duration-300">
+              <div className="w-12 h-12 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <span className="text-primary font-bold text-lg">P</span>
+              </div>
+              <h3 className="text-lg font-semibold mb-2">{t.purchase}</h3>
+              <p className="text-muted-foreground text-sm">{t.purchaseDesc}</p>
+            </div>
+            <div className="bg-card rounded-lg shadow-lg p-6 text-center hover-scale transition-all duration-300">
+              <div className="w-12 h-12 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <span className="text-primary font-bold text-lg">S</span>
+              </div>
+              <h3 className="text-lg font-semibold mb-2">{t.sale}</h3>
+              <p className="text-muted-foreground text-sm">{t.saleDesc}</p>
+            </div>
+            <div className="bg-card rounded-lg shadow-lg p-6 text-center hover-scale transition-all duration-300">
+              <div className="w-12 h-12 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <span className="text-primary font-bold text-lg">V</span>
+              </div>
+              <h3 className="text-lg font-semibold mb-2">{t.valorisation}</h3>
+              <p className="text-muted-foreground text-sm">{t.valorisationDesc}</p>
+            </div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+            <div className="bg-card rounded-lg shadow-lg p-6 text-center hover-scale transition-all duration-300">
+              <div className="w-12 h-12 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <span className="text-primary font-bold text-lg">C</span>
+              </div>
+              <h3 className="text-lg font-semibold mb-2">{t.conservation}</h3>
+              <p className="text-muted-foreground text-sm">{t.conservationDesc}</p>
+            </div>
+            <div className="bg-card rounded-lg shadow-lg p-6 text-center hover-scale transition-all duration-300">
+              <div className="w-12 h-12 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <span className="text-primary font-bold text-lg">M</span>
+              </div>
+              <h3 className="text-lg font-semibold mb-2">{t.monitoring}</h3>
+              <p className="text-muted-foreground text-sm">{t.monitoringDesc}</p>
+            </div>
+            <div className="bg-card rounded-lg shadow-lg p-6 text-center hover-scale transition-all duration-300">
+              <div className="w-12 h-12 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <span className="text-primary font-bold text-lg">P</span>
+              </div>
+              <h3 className="text-lg font-semibold mb-2">{t.placing}</h3>
+              <p className="text-muted-foreground text-sm">{t.placingDesc}</p>
+            </div>
+          </div>
+        </section>
+
         {/* Sections principales */}
         <section className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16 w-full max-w-6xl">
           <div className="bg-card rounded-lg shadow text-center p-6 flex flex-col items-center hover-scale transition-all duration-300 animate-fade-in" style={{ animationDelay: '300ms' }}>

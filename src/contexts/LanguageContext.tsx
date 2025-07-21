@@ -104,6 +104,24 @@ interface Translations {
   // Partners section
   partnersTitle: string;
   partnersSubtitle: string;
+  
+  // Services section
+  servicesTitle: string;
+  servicesSubtitle: string;
+  advisory: string;
+  advisoryDesc: string;
+  purchase: string;
+  purchaseDesc: string;
+  sale: string;
+  saleDesc: string;
+  valorisation: string;
+  valorisationDesc: string;
+  conservation: string;
+  conservationDesc: string;
+  monitoring: string;
+  monitoringDesc: string;
+  placing: string;
+  placingDesc: string;
 }
 
 const translations: Record<Language, Translations> = {
@@ -208,7 +226,25 @@ const translations: Record<Language, Translations> = {
     
     // Partners section
     partnersTitle: 'Our Partners',
-    partnersSubtitle: 'They accompany us in our mission to democratize art'
+    partnersSubtitle: 'They accompany us in our mission to democratize art',
+    
+    // Services section
+    servicesTitle: 'Our Services',
+    servicesSubtitle: 'Professional art services for collectors, investors and art enthusiasts',
+    advisory: 'Advisory',
+    advisoryDesc: 'Expert guidance for art investments and collection strategies',
+    purchase: 'Purchase',
+    purchaseDesc: 'Assistance in acquiring exceptional artworks and rare pieces',
+    sale: 'Sale',
+    saleDesc: 'Professional support for selling artworks at optimal value',
+    valorisation: 'Valorisation',
+    valorisationDesc: 'Professional appraisal and valuation of art collections',
+    conservation: 'Conservation',
+    conservationDesc: 'Expert preservation and restoration of precious artworks',
+    monitoring: 'Monitoring',
+    monitoringDesc: 'Continuous surveillance and care of your art investments',
+    placing: 'Placing',
+    placingDesc: 'Strategic placement of artworks in exhibitions and collections'
   },
   fr: {
     // Navigation
@@ -311,7 +347,25 @@ const translations: Record<Language, Translations> = {
     
     // Partners section
     partnersTitle: 'Nos Partenaires',
-    partnersSubtitle: 'Ils nous accompagnent dans notre mission de démocratiser l\'art'
+    partnersSubtitle: 'Ils nous accompagnent dans notre mission de démocratiser l\'art',
+    
+    // Services section
+    servicesTitle: 'Nos Services',
+    servicesSubtitle: 'Services artistiques professionnels pour collectionneurs, investisseurs et passionnés d\'art',
+    advisory: 'Conseil',
+    advisoryDesc: 'Expertise et guidance pour les investissements artistiques et stratégies de collection',
+    purchase: 'Achat',
+    purchaseDesc: 'Assistance dans l\'acquisition d\'œuvres d\'art exceptionnelles et de pièces rares',
+    sale: 'Vente',
+    saleDesc: 'Accompagnement professionnel pour la vente d\'œuvres d\'art à leur juste valeur',
+    valorisation: 'Valorisation',
+    valorisationDesc: 'Expertise et évaluation professionnelle de collections d\'art',
+    conservation: 'Conservation',
+    conservationDesc: 'Préservation experte et restauration d\'œuvres d\'art précieuses',
+    monitoring: 'Surveillance',
+    monitoringDesc: 'Surveillance continue et soin de vos investissements artistiques',
+    placing: 'Placement',
+    placingDesc: 'Placement stratégique d\'œuvres d\'art dans des expositions et collections'
   }
 };
 
