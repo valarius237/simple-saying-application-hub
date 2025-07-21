@@ -15,7 +15,7 @@ import accordLogo from "../assets/partners/accord-logo.png";
 // Import building and room images
 import buildingGlobalArt from "../assets/building-global-art.jpg";
 import newConferenceRoom from "../assets/conference-room-new.jpg";
-import marieDuboisCeo from "../assets/marie-dubois-ceo.jpg";
+import marieDuboisCeoMature from "../assets/marie-dubois-ceo-mature.jpg";
 
 const Index = () => {
   const { t } = useLanguage();
@@ -100,23 +100,47 @@ const Index = () => {
             <p className="text-muted-foreground text-lg">{t.partnersSubtitle}</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center">
-            <div className="bg-card rounded-lg shadow p-4 flex items-center justify-center h-24 w-full hover-scale transition-all duration-300">
-              <img src={hsbcLogo} alt="HSBC" className="max-h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <div className="bg-card rounded-lg shadow p-4 flex flex-col items-center justify-center h-32 w-full hover-scale transition-all duration-300">
+              <img src={hsbcLogo} alt="HSBC" className="max-h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-opacity duration-300 mb-2" />
+              <div className="text-center">
+                <p className="text-sm font-semibold text-foreground">HSBC</p>
+                <p className="text-xs text-muted-foreground">{t.hsbcMotto}</p>
+              </div>
             </div>
-            <div className="bg-card rounded-lg shadow p-4 flex items-center justify-center h-24 w-full hover-scale transition-all duration-300">
-              <img src={medmeraLogo} alt="MedMera Bank" className="max-h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <div className="bg-card rounded-lg shadow p-4 flex flex-col items-center justify-center h-32 w-full hover-scale transition-all duration-300">
+              <img src={medmeraLogo} alt="MedMera Bank" className="max-h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-opacity duration-300 mb-2" />
+              <div className="text-center">
+                <p className="text-sm font-semibold text-foreground">MedMera Bank</p>
+                <p className="text-xs text-muted-foreground">{t.medmeraMotto}</p>
+              </div>
             </div>
-            <div className="bg-card rounded-lg shadow p-4 flex items-center justify-center h-24 w-full hover-scale transition-all duration-300">
-              <img src={citibankLogo} alt="Citibank" className="max-h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <div className="bg-card rounded-lg shadow p-4 flex flex-col items-center justify-center h-32 w-full hover-scale transition-all duration-300">
+              <img src={citibankLogo} alt="Citibank" className="max-h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-opacity duration-300 mb-2" />
+              <div className="text-center">
+                <p className="text-sm font-semibold text-foreground">Citibank</p>
+                <p className="text-xs text-muted-foreground">{t.citibankMotto}</p>
+              </div>
             </div>
-            <div className="bg-card rounded-lg shadow p-4 flex items-center justify-center h-24 w-full hover-scale transition-all duration-300">
-              <img src={goldmanLogo} alt="Goldman Sachs" className="max-h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <div className="bg-card rounded-lg shadow p-4 flex flex-col items-center justify-center h-32 w-full hover-scale transition-all duration-300">
+              <img src={goldmanLogo} alt="Goldman Sachs" className="max-h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-opacity duration-300 mb-2" />
+              <div className="text-center">
+                <p className="text-sm font-semibold text-foreground">Goldman Sachs</p>
+                <p className="text-xs text-muted-foreground">{t.goldmanMotto}</p>
+              </div>
             </div>
-            <div className="bg-card rounded-lg shadow p-4 flex items-center justify-center h-24 w-full hover-scale transition-all duration-300">
-              <img src={novartisLogo} alt="Novartis Foundation" className="max-h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <div className="bg-card rounded-lg shadow p-4 flex flex-col items-center justify-center h-32 w-full hover-scale transition-all duration-300">
+              <img src={novartisLogo} alt="Novartis Foundation" className="max-h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-opacity duration-300 mb-2" />
+              <div className="text-center">
+                <p className="text-sm font-semibold text-foreground">Novartis</p>
+                <p className="text-xs text-muted-foreground">{t.novartisMotto}</p>
+              </div>
             </div>
-            <div className="bg-card rounded-lg shadow p-4 flex items-center justify-center h-24 w-full hover-scale transition-all duration-300">
-              <img src={accordLogo} alt="Accord Pharmaceuticals" className="max-h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <div className="bg-card rounded-lg shadow p-4 flex flex-col items-center justify-center h-32 w-full hover-scale transition-all duration-300">
+              <img src={accordLogo} alt="Accord Pharmaceuticals" className="max-h-12 max-w-full object-contain opacity-70 hover:opacity-100 transition-opacity duration-300 mb-2" />
+              <div className="text-center">
+                <p className="text-sm font-semibold text-foreground">Accord</p>
+                <p className="text-xs text-muted-foreground">{t.accordMotto}</p>
+              </div>
             </div>
           </div>
         </section>
@@ -176,13 +200,13 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-card rounded-lg shadow-lg p-6 text-center hover-scale transition-all duration-300">
               <img 
-                src={marieDuboisCeo} 
+                src={marieDuboisCeoMature} 
                 alt="Marie Dubois" 
                 className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
               />
               <h3 className="text-lg font-semibold mb-1">Marie Dubois</h3>
-              <p className="text-primary font-medium mb-2">Directrice Générale</p>
-              <p className="text-muted-foreground text-sm">25 ans d'expérience dans l'art contemporain</p>
+              <p className="text-primary font-medium mb-2">{t.generalManager}</p>
+              <p className="text-muted-foreground text-sm">25 {t.yearsExperience}</p>
             </div>
             <div className="bg-card rounded-lg shadow-lg p-6 text-center hover-scale transition-all duration-300">
               <img 
@@ -191,8 +215,8 @@ const Index = () => {
                 className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
               />
               <h3 className="text-lg font-semibold mb-1">Jean Martin</h3>
-              <p className="text-primary font-medium mb-2">Directeur Artistique</p>
-              <p className="text-muted-foreground text-sm">Expert en curation et acquisitions d'art</p>
+              <p className="text-primary font-medium mb-2">{t.artisticDirector}</p>
+              <p className="text-muted-foreground text-sm">{t.artExpertise}</p>
             </div>
             <div className="bg-card rounded-lg shadow-lg p-6 text-center hover-scale transition-all duration-300">
               <img 
@@ -201,8 +225,8 @@ const Index = () => {
                 className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
               />
               <h3 className="text-lg font-semibold mb-1">Sophie Laurent</h3>
-              <p className="text-primary font-medium mb-2">Responsable Collections</p>
-              <p className="text-muted-foreground text-sm">Spécialiste en conservation et restauration</p>
+              <p className="text-primary font-medium mb-2">{t.collectionsManager}</p>
+              <p className="text-muted-foreground text-sm">{t.conservationSpecialist}</p>
             </div>
             <div className="bg-card rounded-lg shadow-lg p-6 text-center hover-scale transition-all duration-300">
               <img 
@@ -211,8 +235,8 @@ const Index = () => {
                 className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
               />
               <h3 className="text-lg font-semibold mb-1">Pierre Bernard</h3>
-              <p className="text-primary font-medium mb-2">Directeur Financier</p>
-              <p className="text-muted-foreground text-sm">Gestion stratégique et développement</p>
+              <p className="text-primary font-medium mb-2">{t.financialDirector}</p>
+              <p className="text-muted-foreground text-sm">{t.strategicManagement}</p>
             </div>
           </div>
         </section>

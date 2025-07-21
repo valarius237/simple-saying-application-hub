@@ -37,6 +37,22 @@ interface Translations {
   executiveOffice: string;
   leadership: string;
   leadershipDescription: string;
+  generalManager: string;
+  artisticDirector: string;
+  collectionsManager: string;
+  financialDirector: string;
+  yearsExperience: string;
+  artExpertise: string;
+  conservationSpecialist: string;
+  strategicManagement: string;
+  
+  // Partners companies info
+  hsbcMotto: string;
+  medmeraMotto: string;
+  citibankMotto: string;
+  goldmanMotto: string;
+  novartisMotto: string;
+  accordMotto: string;
   
   // Collections page
   collectionsTitle: string;
@@ -126,6 +142,22 @@ const translations: Record<Language, Translations> = {
     executiveOffice: 'Executive Office',
     leadership: 'Our Leadership Team',
     leadershipDescription: 'Passionate experts who guide our artistic vision.',
+    generalManager: 'General Manager',
+    artisticDirector: 'Artistic Director',
+    collectionsManager: 'Collections Manager',
+    financialDirector: 'Financial Director',
+    yearsExperience: 'years of experience in contemporary art',
+    artExpertise: 'Expert in curation and art acquisitions',
+    conservationSpecialist: 'Specialist in conservation and restoration',
+    strategicManagement: 'Strategic management and development',
+    
+    // Partners companies info
+    hsbcMotto: 'The World\'s Local Bank',
+    medmeraMotto: 'Banking Excellence for Healthcare',
+    citibankMotto: 'Citi Never Sleeps',
+    goldmanMotto: 'Progress is Everyone\'s Business',
+    novartisMotto: 'Reimagining Medicine',
+    accordMotto: 'Expanding Access to Medicine',
     
     // Collections page
     collectionsTitle: 'Our Collections',
@@ -213,6 +245,22 @@ const translations: Record<Language, Translations> = {
     executiveOffice: 'Bureau Exécutif',
     leadership: 'Notre Équipe Dirigeante',
     leadershipDescription: 'Des experts passionnés qui guident notre vision artistique.',
+    generalManager: 'Directrice Générale',
+    artisticDirector: 'Directeur Artistique',
+    collectionsManager: 'Responsable Collections',
+    financialDirector: 'Directeur Financier',
+    yearsExperience: 'ans d\'expérience dans l\'art contemporain',
+    artExpertise: 'Expert en curation et acquisitions d\'art',
+    conservationSpecialist: 'Spécialiste en conservation et restauration',
+    strategicManagement: 'Gestion stratégique et développement',
+    
+    // Partners companies info
+    hsbcMotto: 'The World\'s Local Bank',
+    medmeraMotto: 'Banking Excellence for Healthcare',
+    citibankMotto: 'Citi Never Sleeps',
+    goldmanMotto: 'Progress is Everyone\'s Business',
+    novartisMotto: 'Reimagining Medicine',
+    accordMotto: 'Expanding Access to Medicine',
     
     // Collections page
     collectionsTitle: 'Nos Collections',
