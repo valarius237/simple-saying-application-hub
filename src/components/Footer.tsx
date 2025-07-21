@@ -1,7 +1,8 @@
 
 import { Link } from "react-router-dom";
-import { Building2, Instagram, Twitter, Youtube, Facebook } from "lucide-react";
+import { Instagram, Twitter, Youtube, Facebook } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import Logo from "@/components/Logo";
 
 const Footer = () => {
   const { t } = useLanguage();
@@ -28,8 +29,7 @@ const Footer = () => {
         {/* Logo & contact */}
         <div className="animate-fade-in" style={{ animationDelay: '100ms' }}>
           <div className="flex items-center gap-2 mb-3">
-            <Building2 className="text-primary" size={22} />
-            <span className="font-bold text-lg text-primary">Musée Inspiré</span>
+            <Logo size="sm" />
           </div>
           <div className="text-muted-foreground text-sm space-y-1 mb-3">
             <div>123 Avenue Imaginaire, 75000 Paris</div>
