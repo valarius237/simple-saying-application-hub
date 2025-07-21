@@ -13,7 +13,7 @@ import novartisLogo from "../assets/partners/novartis-logo.png";
 import accordLogo from "../assets/partners/accord-logo.png";
 
 // Import building and room images
-import buildingGlobalArt from "../assets/building-global-art.jpg";
+import buildingGlobalArt from "../assets/immeuble.png";
 import newConferenceRoom from "../assets/conference-room-new.jpg";
 import marieDuboisCeoMature from "../assets/marie-dubois-ceo-mature.jpg";
 
@@ -61,35 +61,6 @@ const Index = () => {
             <img className="rounded-lg object-cover h-44 mb-4" src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=400" alt="Visiter"/>
             <h2 className="text-lg font-semibold mb-2">{t.visit}</h2>
             <p className="text-muted-foreground mb-3">Préparer sa visite, horaires, tarifs et infos pratiques.</p>
-          </div>
-        </section>
-
-        {/* Infos pratiques */}
-        <section className="w-full mb-14 max-w-6xl animate-fade-in" style={{ animationDelay: '600ms' }}>
-          <h2 className="text-2xl font-bold mb-6 text-center">{t.practicalInfo}</h2>
-          <div className="grid gap-6 md:grid-cols-3">
-            <div className="bg-card rounded-lg shadow p-5 flex flex-col items-center hover-scale transition-all duration-300">
-              <h3 className="font-semibold text-lg mb-1">{t.schedules}</h3>
-              <ul className="text-muted-foreground text-center">
-                <li>Lundi - Vendredi : 10h - 18h</li>
-                <li>Samedi, Dimanche : 11h - 19h</li>
-                <li className="italic text-red-600 mt-1">{t.closedTuesday}</li>
-              </ul>
-            </div>
-            <div className="bg-card rounded-lg shadow p-5 flex flex-col items-center hover-scale transition-all duration-300">
-              <h3 className="font-semibold text-lg mb-1">{t.prices}</h3>
-              <ul className="text-muted-foreground text-center">
-                <li>{t.adult}</li>
-                <li>{t.student}</li>
-                <li>{t.child}</li>
-              </ul>
-            </div>
-            <div className="bg-card rounded-lg shadow p-5 flex flex-col items-center hover-scale transition-all duration-300">
-              <h3 className="font-semibold text-lg mb-1">{t.address}</h3>
-              <p className="text-muted-foreground text-center">
-                123 Avenue Imaginaire<br />75000 Paris, France
-              </p>
-            </div>
           </div>
         </section>
 
