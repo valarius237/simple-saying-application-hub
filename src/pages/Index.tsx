@@ -18,6 +18,8 @@ import accordLogo from "../assets/partners/accord-logo.png";
 import buildingGlobalArt from "../assets/immeuble.png";
 import newConferenceRoom from "../assets/conference-room-new.jpg";
 import marieDuboisCeoMature from "../assets/marie-dubois-ceo-mature.jpg";
+import sophieLaurentCurator from "../assets/sophie-laurent-curator.jpg";
+import pierreBernardDirector from "../assets/pierre-bernard-director.jpg";
 
 const Index = () => {
   const { t } = useLanguage();
@@ -293,7 +295,7 @@ const Index = () => {
             </div>
             <div className="bg-card rounded-lg shadow-lg p-6 text-center hover-scale transition-all duration-300">
               <img 
-                src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&h=150&fit=crop&crop=face" 
+                src={sophieLaurentCurator} 
                 alt="Sophie Laurent" 
                 className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
               />
@@ -303,7 +305,7 @@ const Index = () => {
             </div>
             <div className="bg-card rounded-lg shadow-lg p-6 text-center hover-scale transition-all duration-300">
               <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" 
+                src={pierreBernardDirector} 
                 alt="Pierre Bernard" 
                 className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
               />
