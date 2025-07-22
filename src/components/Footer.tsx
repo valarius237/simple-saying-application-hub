@@ -44,7 +44,7 @@ const Footer = () => {
         </nav>
       </div>
       <div className="text-muted-foreground text-xs text-center mt-8">
-        © {new Date().getFullYear()} Musée Inspiré — {t.allRightsReserved}
+        © Global Art Conglomerate — {t.allRightsReserved}
       </div>
     </footer>
   );
