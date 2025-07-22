@@ -3,6 +3,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useLanguage } from "@/contexts/LanguageContext";
 import Logo from "@/components/Logo";
+import { useEffect } from "react";
+import { Lightbulb, ShoppingCart, DollarSign, TrendingUp, Shield, BarChart3, MapPin } from "lucide-react";
 
 // Import partner logos
 import hsbcLogo from "../assets/partners/hsbc-logo.png";
@@ -19,6 +21,64 @@ import marieDuboisCeoMature from "../assets/marie-dubois-ceo-mature.jpg";
 
 const Index = () => {
   const { t } = useLanguage();
+  
+  useEffect(() => {
+    // SEO Meta tags
+    document.title = "Global Art Conglomerate - Musée d'Art Mondial";
+    
+    // Meta description
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Global Art Conglomerate - Premier musée d\'art mondial offrant conseils, achats, ventes, valorisation, conservation, monitoring et placement d\'œuvres d\'art. Partenaires: HSBC, Goldman Sachs, Citibank.');
+    } else {
+      const meta = document.createElement('meta');
+      meta.name = 'description';
+      meta.content = 'Global Art Conglomerate - Premier musée d\'art mondial offrant conseils, achats, ventes, valorisation, conservation, monitoring et placement d\'œuvres d\'art. Partenaires: HSBC, Goldman Sachs, Citibank.';
+      document.head.appendChild(meta);
+    }
+
+    // Meta keywords
+    const metaKeywords = document.querySelector('meta[name="keywords"]');
+    if (metaKeywords) {
+      metaKeywords.setAttribute('content', 'musée art, galerie art, œuvres art, conseils artistiques, achat art, vente art, conservation art, placement art, Global Art Conglomerate');
+    } else {
+      const meta = document.createElement('meta');
+      meta.name = 'keywords';
+      meta.content = 'musée art, galerie art, œuvres art, conseils artistiques, achat art, vente art, conservation art, placement art, Global Art Conglomerate';
+      document.head.appendChild(meta);
+    }
+
+    // Open Graph tags
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle) {
+      ogTitle.setAttribute('content', 'Global Art Conglomerate - Musée d\'Art Mondial');
+    } else {
+      const meta = document.createElement('meta');
+      meta.setAttribute('property', 'og:title');
+      meta.content = 'Global Art Conglomerate - Musée d\'Art Mondial';
+      document.head.appendChild(meta);
+    }
+
+    const ogDescription = document.querySelector('meta[property="og:description"]');
+    if (ogDescription) {
+      ogDescription.setAttribute('content', 'Premier musée d\'art mondial offrant des services complets de gestion d\'œuvres d\'art avec nos partenaires financiers prestigieux.');
+    } else {
+      const meta = document.createElement('meta');
+      meta.setAttribute('property', 'og:description');
+      meta.content = 'Premier musée d\'art mondial offrant des services complets de gestion d\'œuvres d\'art avec nos partenaires financiers prestigieux.';
+      document.head.appendChild(meta);
+    }
+
+    const ogType = document.querySelector('meta[property="og:type"]');
+    if (ogType) {
+      ogType.setAttribute('content', 'website');
+    } else {
+      const meta = document.createElement('meta');
+      meta.setAttribute('property', 'og:type');
+      meta.content = 'website';
+      document.head.appendChild(meta);
+    }
+  }, []);
   
   return (
     <>
@@ -54,28 +114,28 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-card rounded-lg shadow-lg p-6 text-center hover-scale transition-all duration-300">
               <div className="w-12 h-12 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-primary font-bold text-lg">A</span>
+                <Lightbulb className="w-6 h-6 text-primary" />
               </div>
               <h3 className="text-lg font-semibold mb-2">{t.advisory}</h3>
               <p className="text-muted-foreground text-sm">{t.advisoryDesc}</p>
             </div>
             <div className="bg-card rounded-lg shadow-lg p-6 text-center hover-scale transition-all duration-300">
               <div className="w-12 h-12 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-primary font-bold text-lg">P</span>
+                <ShoppingCart className="w-6 h-6 text-primary" />
               </div>
               <h3 className="text-lg font-semibold mb-2">{t.purchase}</h3>
               <p className="text-muted-foreground text-sm">{t.purchaseDesc}</p>
             </div>
             <div className="bg-card rounded-lg shadow-lg p-6 text-center hover-scale transition-all duration-300">
               <div className="w-12 h-12 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-primary font-bold text-lg">S</span>
+                <DollarSign className="w-6 h-6 text-primary" />
               </div>
               <h3 className="text-lg font-semibold mb-2">{t.sale}</h3>
               <p className="text-muted-foreground text-sm">{t.saleDesc}</p>
             </div>
             <div className="bg-card rounded-lg shadow-lg p-6 text-center hover-scale transition-all duration-300">
               <div className="w-12 h-12 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-primary font-bold text-lg">V</span>
+                <TrendingUp className="w-6 h-6 text-primary" />
               </div>
               <h3 className="text-lg font-semibold mb-2">{t.valorisation}</h3>
               <p className="text-muted-foreground text-sm">{t.valorisationDesc}</p>
@@ -84,21 +144,21 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
             <div className="bg-card rounded-lg shadow-lg p-6 text-center hover-scale transition-all duration-300">
               <div className="w-12 h-12 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-primary font-bold text-lg">C</span>
+                <Shield className="w-6 h-6 text-primary" />
               </div>
               <h3 className="text-lg font-semibold mb-2">{t.conservation}</h3>
               <p className="text-muted-foreground text-sm">{t.conservationDesc}</p>
             </div>
             <div className="bg-card rounded-lg shadow-lg p-6 text-center hover-scale transition-all duration-300">
               <div className="w-12 h-12 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-primary font-bold text-lg">M</span>
+                <BarChart3 className="w-6 h-6 text-primary" />
               </div>
               <h3 className="text-lg font-semibold mb-2">{t.monitoring}</h3>
               <p className="text-muted-foreground text-sm">{t.monitoringDesc}</p>
             </div>
             <div className="bg-card rounded-lg shadow-lg p-6 text-center hover-scale transition-all duration-300">
               <div className="w-12 h-12 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-primary font-bold text-lg">P</span>
+                <MapPin className="w-6 h-6 text-primary" />
               </div>
               <h3 className="text-lg font-semibold mb-2">{t.placing}</h3>
               <p className="text-muted-foreground text-sm">{t.placingDesc}</p>
