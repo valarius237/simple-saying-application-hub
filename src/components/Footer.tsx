@@ -32,9 +32,9 @@ const Footer = () => {
             <Logo size="sm" />
           </div>
           <div className="text-muted-foreground text-sm space-y-1 mb-3">
-            <div>123 Avenue Imaginaire, 75000 Paris</div>
+            <div>412 N Main St Ste100 Buffalo, WY 82834 USA</div>
             <a href="mailto:contact@musee-inspire.fr" className="hover:underline">contact@musee-inspire.fr</a>
-            <div>Tél&nbsp;: 01 23 45 67 89</div>
+            <div>Tél&nbsp;: +44 7520 640943</div>
           </div>
           <div className="flex gap-3 mt-3" aria-label={t.socialNetworks}>
             {social.map(({ name, icon: Icon, url }) => (
