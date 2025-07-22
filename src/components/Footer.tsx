@@ -1,6 +1,5 @@
 
 import { Link } from "react-router-dom";
-import { Instagram, Twitter, Youtube, Facebook } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import Logo from "@/components/Logo";
 
@@ -16,13 +15,6 @@ const Footer = () => {
     { name: t.contact, path: "/contact" },
   ];
 
-  const social = [
-    { name: "Instagram", icon: Instagram, url: "https://instagram.com" },
-    { name: "Facebook", icon: Facebook, url: "https://facebook.com" },
-    { name: "Twitter", icon: Twitter, url: "https://twitter.com" },
-    { name: "YouTube", icon: Youtube, url: "https://youtube.com" },
-  ];
-
   return (
     <footer className="bg-card/70 border-t border-border mt-16 pt-8 pb-6 px-3 animate-fade-in">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row md:justify-between gap-8">
@@ -35,17 +27,6 @@ const Footer = () => {
             <div>412 N Main St Ste100 Buffalo, WY 82834 USA</div>
             <a href="mailto:contact@musee-inspire.fr" className="hover:underline">contact@musee-inspire.fr</a>
             <div>Tél&nbsp;: +44 7520 640943</div>
-          </div>
-          <div className="flex gap-3 mt-3" aria-label={t.socialNetworks}>
-            {social.map(({ name, icon: Icon, url }) => (
-              <a key={name} href={url} target="_blank" rel="noopener noreferrer"
-                className="rounded-full bg-accent/70 p-2 hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110"
-                title={name}
-                aria-label={name}
-              >
-                <Icon size={20} />
-              </a>
-            ))}
           </div>
         </div>
 
