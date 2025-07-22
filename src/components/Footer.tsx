@@ -9,8 +9,7 @@ const Footer = () => {
   const navigation = [
     { name: t.home, path: "/" },
     { name: t.collections, path: "/collections" },
-    { name: t.expositions, path: "/expositions" },
-    { name: t.visit, path: "/visit" },
+    { name: t.artworksForSale, path: "/artworks-for-sale" },
     { name: t.about, path: "/about" },
     { name: t.contact, path: "/contact" },
   ];
