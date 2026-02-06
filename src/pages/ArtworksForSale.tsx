@@ -50,7 +50,7 @@ const ArtworksForSale = () => {
   const handleContactForPurchase = (artworkTitle: string) => {
     const subject = `Interest in purchasing: ${artworkTitle}`;
     const body = `Hello,\n\nI am interested in purchasing the artwork "${artworkTitle}". Could you please provide more information about the purchase process?\n\nThank you.`;
-    window.location.href = `mailto:sales@musee-inspire.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:contact@globalartconglomerate.store?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
   return (
