@@ -276,30 +276,30 @@ const Index = () => {
             <div className="bg-card rounded-lg shadow-lg p-6 text-center hover-scale transition-all duration-300">
               <img 
                 src={marieDuboisCeoMature} 
-                alt="Marie Dubois" 
+                alt="Antoinette Lecomte" 
                 className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
               />
-              <h3 className="text-lg font-semibold mb-1">Marie Dubois</h3>
+              <h3 className="text-lg font-semibold mb-1">Antoinette Lecomte</h3>
               <p className="text-primary font-medium mb-2">{t.generalManager}</p>
               <p className="text-muted-foreground text-sm">25 {t.yearsExperience}</p>
             </div>
             <div className="bg-card rounded-lg shadow-lg p-6 text-center hover-scale transition-all duration-300">
               <img 
                 src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face" 
-                alt="Jean Martin" 
+                alt="Andrew Gerald Spencer" 
                 className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
               />
-              <h3 className="text-lg font-semibold mb-1">Jean Martin</h3>
+              <h3 className="text-lg font-semibold mb-1">Andrew Gerald Spencer</h3>
               <p className="text-primary font-medium mb-2">{t.artisticDirector}</p>
               <p className="text-muted-foreground text-sm">{t.artExpertise}</p>
             </div>
             <div className="bg-card rounded-lg shadow-lg p-6 text-center hover-scale transition-all duration-300">
               <img 
                 src={sophieLaurentCurator} 
-                alt="Sophie Laurent" 
+                alt="Estrella Lopez" 
                 className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
               />
-              <h3 className="text-lg font-semibold mb-1">Sophie Laurent</h3>
+              <h3 className="text-lg font-semibold mb-1">Estrella Lopez</h3>
               <p className="text-primary font-medium mb-2">{t.collectionsManager}</p>
               <p className="text-muted-foreground text-sm">{t.conservationSpecialist}</p>
             </div>
