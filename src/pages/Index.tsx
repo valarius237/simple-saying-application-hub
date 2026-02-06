@@ -95,9 +95,13 @@ const Index = () => {
 
         {/* Section À la une */}
         <section className="w-full mb-14 max-w-4xl animate-fade-in" style={{ animationDelay: '200ms' }}>
-          <div className="flex flex-col md:flex-row items-center bg-card rounded-xl shadow-md overflow-hidden hover-scale transition-all duration-300">
-          <div className="h-56 w-full md:w-72 flex items-center justify-center bg-gradient-to-br from-accent to-accent/50 rounded-t-xl md:rounded-l-xl md:rounded-t-none">
-              <Logo size="xl" showText={false} />
+          <div className="flex flex-col md:flex-row items-stretch bg-card rounded-xl shadow-md overflow-hidden hover-scale transition-all duration-300">
+            <div className="w-full md:w-72 flex items-center justify-center bg-gradient-to-br from-accent to-accent/50 rounded-t-xl md:rounded-l-xl md:rounded-t-none p-0">
+              <img 
+                src="/favicon-new.png" 
+                alt="Global Art Conglomerate" 
+                className="w-full h-full object-contain p-4"
+              />
             </div>
             <div className="p-6 flex flex-col justify-center">
               <h2 className="text-2xl font-semibold mb-1">{t.featuredTitle}</h2>
