@@ -14,7 +14,7 @@ const artworks = [
     artist: "Namibia Afrique",
     year: "British museum",
     category: "african",
-    price: "$1,800,000.00",
+    price: "$31,800,000.00",
     description: {
       en: "Symbol of life, growth, and connection between all beings.",
       fr: "Symbole de vie, croissance et lien entre tous êtres."
@@ -26,7 +26,7 @@ const artworks = [
     artist: "Kentucky, USA",
     year: "GUGGENHEIM MUSEUM",
     category: "african",
-    price: "$12,680,000.00",
+    price: "$264,680,000.00",
     description: {
       en: "Masterpieces of modern art from Cézanne to Picasso.",
       fr: "Chefs-d'œuvre de l'art moderne, de Cézanne à Picasso."
@@ -38,7 +38,7 @@ const artworks = [
     artist: "Zone Afrique",
     year: "British museum",
     category: "african",
-    price: "$750,000.00",
+    price: "$24,750,000.00",
     description: {
       en: "Royal Yoruba sculpture symbolizing power, divinity, and ancestral heritage.",
       fr: "Sculpture royale Yoruba symbolisant pouvoir, divinité et héritage ancestral."
@@ -50,7 +50,7 @@ const artworks = [
     artist: "Zone Afrique",
     year: "British museum",
     category: "african",
-    price: "$7,000,000.00",
+    price: "$1,700,000,000.00",
     description: {
       en: "Regal throne embodying authority, dignity, and cultural symbolism.",
       fr: "Trône royal incarnant autorité, dignité et symbolisme culturel."
@@ -86,7 +86,7 @@ const artworks = [
     artist: "Youmbe group",
     year: "The met",
     category: "african",
-    price: "$1,385,000.00",
+    price: "$128,385,000.00",
     description: {
       en: "Power figure enforcing justice, protection, and spiritual authority.",
       fr: "Figure de pouvoir imposant justice, protection et autorité spirituelle."
