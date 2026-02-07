@@ -1,5 +1,5 @@
 
-import faviconLogo from "/favicon-new.png";
+import globalArtLogo from "@/assets/global-art-logo.jpg";
 
 interface LogoProps {
   size?: "sm" | "md" | "lg" | "xl";
@@ -24,9 +24,9 @@ const Logo = ({ size = "md", showText = true }: LogoProps) => {
   return (
     <div className="flex items-center gap-3 group">
       <img 
-        src={faviconLogo} 
+        src={globalArtLogo} 
         alt="Global Art Conglomerate" 
-        className={`${imgSizes[size]} object-contain group-hover:scale-105 transition-transform duration-300`}
+        className={`${imgSizes[size]} rounded-full object-cover group-hover:scale-105 transition-transform duration-300`}
       />
       {showText && (
         <div className="flex flex-col">
