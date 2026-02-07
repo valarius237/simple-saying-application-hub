@@ -24,9 +24,8 @@ import accordLogo from "../assets/partners/accord-logo.png";
 // Import building and room images
 import buildingGlobalArt from "../assets/immeuble.png";
 import newConferenceRoom from "../assets/conference-room-new.jpg";
-import cheikh from "../assets/cheikh.jpg";
+import cheikh from "../assets/cheikh.png";
 import sophieLaurentCurator from "../assets/sophie-laurent-curator.jpg";
-import pierreBernardDirector from "../assets/pierre-bernard-director.jpg";
 
 const Index = () => {
   const { t } = useLanguage();
