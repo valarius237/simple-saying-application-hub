@@ -151,8 +151,8 @@ const translations: Record<Language, Translations> = {
     free: 'Free',
     closedTuesday: 'Closed on Tuesday',
     aboutMuseumTitle: 'About the museum',
-    aboutMuseumText1: 'Founded in 2025, the Inspired Museum draws its inspiration from the greatest museums in the world to offer everyone an immersive experience between past, present and discoveries.',
-    aboutMuseumText2: 'Modern architecture, interactive exhibitions and educational activities punctuate the life of our institution.',
+    aboutMuseumText1: 'Founded in 1969 in London and based in the United Statesof America this organization aims to preserve and promote major collections of ancient and cultural art objects throughout the world.',
+    aboutMuseumText2: 'In partnership with several museums across the globe, we offer you the opportunity to integrate the art world into a self-sustaining dynamic.',
     ourBuilding: 'Our Building',
     buildingDescription: 'Modern architecture that reflects our contemporary artistic vision.',
     interiorSpaces: 'Interior Spaces',
@@ -205,7 +205,7 @@ const translations: Record<Language, Translations> = {
     aboutTitle: 'About the museum',
     ourHistory: 'Our history',
     aboutText: 'Our museum is inspired by the greatest establishments worldwide. Modern architecture, interactive presentation, and an ever-evolving collection: everything is designed to offer an unforgettable experience to visitors, young and old.',
-    historyText: 'Founded in 2025, our museum aims to make culture accessible to all, while innovating in the enhancement of artistic and scientific heritage.',
+    historyText: 'Founded in 1969 in London and based in the United Statesof America this organization aims to preserve and promote major collections of ancient and cultural art objects throughout the world.',
     
     // Contact page
     contactUs: 'Contact us',
@@ -272,8 +272,8 @@ const translations: Record<Language, Translations> = {
     free: 'Gratuit',
     closedTuesday: 'Fermé le mardi',
     aboutMuseumTitle: 'À propos du musée',
-    aboutMuseumText1: 'Fondé en 2025, le Musée Inspiré puise son inspiration dans les plus grands musées du monde pour offrir à chacun·e une expérience immersive entre passé, présent et découvertes.',
-    aboutMuseumText2: 'Architecture moderne, expositions interactives et actions éducatives rythment la vie de notre institution.',
+    aboutMuseumText1: "Fondé en 1969 à Londres et basée aux États Unis, cette organisation a pour but la conservation et la mise en valeur des grandes collections d’objets d’art antiques et culturels à travers le monde entier.",
+    aboutMuseumText2: 'En partenariat avec plusieurs musées à travers le monde, nous vous offrons la possibilité d’intégrer le monde artistique dans une dynamisme autosuffisante.',
     ourBuilding: 'Notre Bâtiment',
     buildingDescription: 'Une architecture moderne qui reflète notre vision artistique contemporaine.',
     interiorSpaces: 'Espaces Intérieurs',
@@ -326,7 +326,7 @@ const translations: Record<Language, Translations> = {
     aboutTitle: 'À propos du musée',
     ourHistory: 'Notre histoire',
     aboutText: 'Notre musée s\'inspire des plus grands établissements mondiaux. Architecture moderne, présentation interactive, et une collection en permanente évolution : tout est fait pour offrir une expérience inoubliable aux visiteurs, petit·e·s et grand·e·s.',
-    historyText: 'Fondé en 2025, notre musée a pour mission de rendre la culture accessible à tou·te·s, tout en innovant sur la mise en valeur du patrimoine artistique et scientifique.',
+    historyText: 'Fondé en 1969 à Londres et basée aux États Unis, cette organisation a pour but la conservation et la mise en valeur des grandes collections d’objets d’art antiques et culturels à travers le monde entier.',
     
     // Contact page
     contactUs: 'Contactez-nous',
