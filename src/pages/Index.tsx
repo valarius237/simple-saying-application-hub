@@ -324,19 +324,12 @@ const Index = () => {
               {t.buildingDescription}
             </p>
           </div>
-          <div className="bg-card rounded-xl shadow-lg overflow-hidden hover-scale transition-all duration-300 relative">
+          <div className="bg-card rounded-xl shadow-lg overflow-hidden hover-scale transition-all duration-300">
             <img
               src={buildingGlobalArt}
               alt="Global Art Conglomerate Building"
               className="w-full h-96 object-cover"
             />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <img
-                src={globalArtLogo}
-                alt="Global Art Conglomerate Logo"
-                className="w-40 h-40 md:w-56 md:h-56 rounded-full object-cover shadow-2xl border-4 border-background/80"
-              />
-            </div>
           </div>
         </section>
 
