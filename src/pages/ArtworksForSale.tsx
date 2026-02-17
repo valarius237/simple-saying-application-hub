@@ -12,7 +12,7 @@ const artworksForSale = [
   {
     title: "Collection Mantoum",
     artist: "Cameroun",
-    price: "$2,300.000.00",
+    price: "$2,300,000,000.00",
     description: {
       en: "élégance royale et héritage culturel camerounais intemporel.",
       fr: "royal elegance meets timeless Cameroonian cultural heritage."
@@ -23,7 +23,7 @@ const artworksForSale = [
     {
     title: "Shüngwu collection",
     artist: "Cameroun",
-    price: "$1,330.000.00",
+    price: "$1,330,000,000.00",
     description: {
       en: "puissance ancestrale et art sacré du peuple Bamileke.",
       fr: "ancestral power and sacred art of the Bamileke people."
@@ -34,7 +34,7 @@ const artworksForSale = [
      {
     title: "Royal artists",
     artist: "Gabon",
-    price: "$7,00,000.00",
+    price: "$7,000,000,000.00",
     description: {
       en: "célébration majestueuse des talents et traditions royales africaines.",
       fr: "majestic celebration of African royal talents and traditions."
