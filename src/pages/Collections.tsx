@@ -14,7 +14,7 @@ const artworks = [
     artist: "Namibia Afrique",
     year: "British museum",
     category: "african",
-    price: "$31,800,000,000.00",
+    price: "$31,800,000.00",
     description: {
       en: "Symbol of life, growth, and connection between all beings.",
       fr: "Symbole de vie, croissance et lien entre tous êtres."
@@ -26,7 +26,7 @@ const artworks = [
     artist: "Kentucky, USA",
     year: "GUGGENHEIM MUSEUM",
     category: "african",
-    price: "$264,680,000,000.00",
+    price: "$264,680,000.00",
     description: {
       en: "Masterpieces of modern art from Cézanne to Picasso.",
       fr: "Chefs-d'œuvre de l'art moderne, de Cézanne à Picasso."
@@ -38,7 +38,7 @@ const artworks = [
     artist: "Zone Afrique",
     year: "British museum",
     category: "african",
-    price: "$24,750,000,000.00",
+    price: "$24,750,000.00",
     description: {
       en: "Royal Yoruba sculpture symbolizing power, divinity, and ancestral heritage.",
       fr: "Sculpture royale Yoruba symbolisant pouvoir, divinité et héritage ancestral."
@@ -50,7 +50,7 @@ const artworks = [
     artist: "Zone Afrique",
     year: "British museum",
     category: "african",
-    price: "$1,700,000,000,000.00",
+    price: "$1,700,000,000.00",
     description: {
       en: "Regal throne embodying authority, dignity, and cultural symbolism.",
       fr: "Trône royal incarnant autorité, dignité et symbolisme culturel."
@@ -62,7 +62,7 @@ const artworks = [
     artist: "Mblo Afrique",
     year: "19th century",
     category: "african",
-    price: "$1,300,000,000.00",
+    price: "$1,300,000.00",
     description: {
       en: "Ceremonial mask representing identity, protection, and ancestral spirits.",
       fr: "Masque rituel symbolisant identité, protection et esprits ancestraux."
@@ -74,7 +74,7 @@ const artworks = [
     artist: "Zone Afrique",
     year: "Met Paris",
     category: "african",
-    price: "$3,245,000,000.00",
+    price: "$3,245,000.00",
     description: {
       en: "Sacred royal seat honoring Njouteu, guardian of tradition.",
       fr: "Trône sacré honorant Njouteu, gardien des traditions."
@@ -86,7 +86,7 @@ const artworks = [
     artist: "Youmbe group",
     year: "The met",
     category: "african",
-    price: "$128,385,000,000.00",
+    price: "$128,385,000.00",
     description: {
       en: "Power figure enforcing justice, protection, and spiritual authority.",
       fr: "Figure de pouvoir imposant justice, protection et autorité spirituelle."
@@ -98,7 +98,7 @@ const artworks = [
     artist: "Pablo Picasso",
     year: "1937",
     category: "war",
-    price: "$2,500,000,000.00",
+    price: "$2,500,000.00",
     description: {
       en: "Cubist masterpiece denouncing the horrors of the Spanish Civil War.",
       fr: "Chef-d'œuvre du cubisme dénonçant les horreurs de la guerre civile espagnole."
@@ -110,7 +110,7 @@ const artworks = [
     artist: "Léonard de Vinci",
     year: "1495-1498",
     category: "religious",
-    price: "$4,200,000,000.00",
+    price: "$4,200,000.00",
     description: {
       en: "Depiction of Christ's last meal with his disciples.",
       fr: "Représentation du dernier repas du Christ avec ses disciples."
@@ -122,7 +122,7 @@ const artworks = [
     artist: "Vincent van Gogh",
     year: "1889",
     category: "european",
-    price: "$2,100,000,000.00",
+    price: "$2,100,000.00",
     description: {
       en: "Post-impressionist nocturnal landscape with swirling movements.",
       fr: "Paysage nocturne post-impressionniste aux mouvements tourbillonnants."
@@ -134,7 +134,7 @@ const artworks = [
     artist: "Vincent van Gogh",
     year: "1888",
     category: "european",
-    price: "$1,600,000,000.00",
+    price: "$1,600,000.00",
     description: {
       en: "Series of still lifes depicting sunflowers in a vase.",
       fr: "Série de natures mortes représentant des tournesols dans un vase."
@@ -146,7 +146,7 @@ const artworks = [
     artist: "Katsushika Hokusai",
     year: "1831",
     category: "asian",
-    price: "$1,200,000,000.00",
+    price: "$1,200,000.00",
     description: {
       en: "Iconic Japanese print in ukiyo-e style.",
       fr: "Estampe japonaise emblématique du style ukiyo-e."
