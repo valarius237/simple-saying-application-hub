@@ -137,7 +137,7 @@ const translations: Record<Language, Translations> = {
     
     // Home page
     welcomeTitle: 'Welcome to Global Art Conglomerate',
-    welcomeSubtitle: 'A place where history, art and discovery meet to amaze young and old. Explore our unique collections and temporary exhibitions!',
+    welcomeSubtitle: 'Welcome to our website. A place where great ideas meet with high ambitions to preserve our cultures and promote global growth and prosperity.',
     featuredTitle: 'Featured: The Gate of Time',
     featuredSubtitle: 'Discover this monumental piece from our ancient collection, witness to the passage of civilizations.',
     newAcquisition: 'New acquisition!',
@@ -258,7 +258,7 @@ const translations: Record<Language, Translations> = {
     
     // Home page
     welcomeTitle: 'Bienvenue au Global Art Conglomerate',
-    welcomeSubtitle: 'Un lieu où l\'histoire, l\'art et la découverte se croisent pour émerveiller petits et grands. Explorez nos collections uniques et expositions temporaires !',
+    welcomeSubtitle: 'Bienvenue dans notre site Web. Un endroit où les grands esprits rencontrent les grandes ambitions pour préserver nos cultures et promouvoir la croissance globale y compris la prospérité.',
     featuredTitle: 'À la une : La Porte du Temps',
     featuredSubtitle: 'Découvrez cette pièce monumentale de notre collection antique, témoin du passage des civilisations.',
     newAcquisition: 'Nouvelle acquisition !',
