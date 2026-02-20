@@ -26,9 +26,9 @@ const Contact = () => {
     };
 
     // EmailJS - à renseigner avec vos identifiants (test/demo)
-    const serviceID = "votre_service_id";
-    const templateID = "votre_template_id";
-    const publicKey = "votre_public_key";
+    const serviceID = "service_y4dky4x";
+    const templateID = "template_fjnrk7p";
+    const publicKey = "4pxrQcTdmNLg39SVG";
 
     try {
       const res = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
