@@ -4,15 +4,15 @@ import Footer from "@/components/Footer";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 import { Mail } from "lucide-react";
-import mantum from "./images/vente/mantoum.jpeg";
+import mantum from "./images/vente/mantoum.jpg";
 import shungwu from "./images/vente/shungwu.jpeg";
 import artists from "./images/vente/artists.jpeg";
 
 const artworksForSale = [
   {
-    title: "Collection Mantoum",
+    title: "Collection Njimelen",
     artist: "Cameroun",
-    price: "$2,300,000,000.00",
+    price: "$175,000,000.00",
     description: {
       en: "élégance royale et héritage culturel camerounais intemporel.",
       fr: "royal elegance meets timeless Cameroonian cultural heritage."
